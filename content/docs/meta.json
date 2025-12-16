@@ -1,6 +1,14 @@
 {
   "title": "Display Name",
-  "icon": "MyIcon",
-  "pages": ["index", "test", "pasien", "medis", "keperawatan"],
+  "pages": [
+    "index",
+    "pasien",
+    "medis",
+    "keperawatan",
+    "kebidanan",
+    "gizi",
+    "kajian-awal-farmasi",
+    "perawatan-pasien"
+  ],
   "defaultOpen": true
 }
