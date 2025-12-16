@@ -5,5 +5,11 @@ export function baseOptions(): BaseLayoutProps {
     nav: {
       title: "Remedis Docs",
     },
+    links: [
+      {
+        text: "Documentation",
+        url: "/docs",
+      },
+    ],
   };
 }
