@@ -3,10 +3,42 @@ title: Status Kebidanan
 description: Menu ini akan menunjukkan tata cara pengisian formulir Status Kebidanan
 ---
 
-## 1. Cara Pengisian Keluhan Utama
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs items={['Keluhan Utama', 'Pemeriksaan Fisik','Pengkajian Nyeri', 'Prosedur Invasif & Resiko Infeksi', 'Kondisi Sosial & Psikologi', 'Assesmen Kebutuhan Fungsional', 'Pengkajian Lainnya']}>
+  <Tab value="Keluhan Utama">
+  ## Pengisian Keluhan Utama
+  #### 1. Informasi Umum
 
 <img
-  src="/pengkajian_keperawatan_keluhan.png"
+  src="/keluhan_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                          |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| Waktu Pengisian                  | Pilih tanggal dan jam pengisian formulir                                                |
+| Nama Suami                       | Diisikan dengan nama suami                                                              |
+| Usia                             | Diisikan dengan usia suami                                                              |
+| Pekerjaan                        | Diisi jenis pekerjaan suami.                                                            |
+| Nama BPJP                        | Diisi nama lengkap petugas bidan yang bertanggung jawab atas asuhan                     |
+| Pengkajian Oleh                  | Diisi nama lengkap petugas yang melakukan pengkajian awal                               |
+| Keluhan Utama                    | Diisi dengan keluhan yang paling dirasakan/menyebabkan pasien datang saat ini.          |
+| Riwayat Kesehatan Sekarang       | Diisi narasi riwayat penyakit yang diderita pasien saat ini                             |
+| Riwayat Persalinan Sekarang      | Diisi riwayat singkat persalinan yang sedang/baru terjadi (jika terkait persalinan).    |
+| Riwayat Penyakit Dahulu          | Diisi dengan riwayat penyakit yang pernah diderita pasien di masa lalu.                 |
+| Riwayat Penyakit Keluarga        | Diisi riwayat penyakit menular atau keturunan yang diderita keluarga pasien             |
+
+#### 2. Riwayat Menstruasi
+<img
+  src="/riwayat_menstruasi.png"
   alt="Contoh tampilan form pengkajian awal medis"
   width="750"
   style={{
@@ -18,7 +50,7 @@ description: Menu ini akan menunjukkan tata cara pengisian formulir Status Kebid
 />
 
 <img
-  src="/lanjutan_keluhan_utama.png"
+  src="/lanjutan_riwayat_m.png"
   alt="Contoh tampilan form pengkajian awal medis"
   width="750"
   style={{
@@ -32,19 +64,23 @@ description: Menu ini akan menunjukkan tata cara pengisian formulir Status Kebid
 
 | Variable                         | Cara Pengisian                                                                          |
 | -------------------------------- | --------------------------------------------------------------------------------------- |
-| Waktu Pengisian                  | Pilih tanggal dan jam pengisian formulir                                                |
-| Keluhan Utama                    | Diisikan dengan keluhan utama                                                           |
-| Riwayat penyakit pasien sekarang | Diisikan dengan riwayat pasien saat ini atau kejadian terbaru yang dialami oleh pasien. |
-| Riwayat Penyakit                 | Diisikan dengan riwayat penyakit pasien terdahulu                                       |
-| Alergi                           | Pilih jenis alergi - isi keterangan terkait alergi pasien - klik tambah                 |
-| Pemberian Obat                   | Diisikan dengan nama obat, dosis, dan lama penggunaan - klik tambah                     |
-| Perilaku Berisiko                | Pilih perilaku pasien yang beresiko dengan klik checkbox                                |
-| Perilaku Lain                    | Diisi perilaku lain pasien yang tidak disebutkan diatas                                 |
+| Siklus                           | Dipilih salah satu opsi: Teratur, Tidak Teratur, Tidak Haid, Belum Haid.                |
+| HPHT                             | Diisi dengan tanggal Hari Pertama Haid Terakhir                                         |
+| Lama                             | Diisi jumlah hari lama haid terjadi.                                                    |
+| Disminore                        | Dipilih Ya atau Tidak (nyeri saat haid).                                                |
+| Keputihan                        | Dipilih Ya atau Tidak. Jika Ya, diisi deskripsi (misal: warna, bau, jumlah).            |
+| Jumlah                           | Diisi deskripsi jumlah darah haid (misal: sedikit/sedang/banyak).                       |
+| Warna Darah                      | Diisi deskripsi warna darah haid (misal: merah, cokelat).                               |
+| Keluhan Lain Saat Haid           | Diisi keluhan lain yang menyertai haid.                                                 |
+| Pendarahan Diluar Haid           | Pilih 'ya' apabila terjadi pendarahan diluar haid, pilih 'tidak' bila tidak terjadi     |
+| Jika Pernah, Kapan               | Diisi tanggal/periode kejadian perdarahan di luar haid.                                 |
+| Banyaknya                        | Diisi perkiraan jumlah perdarahan (misal: flek, ganti pembalut 1x/hari).                |
+| Intensitas Pendarahan            | Dipilih salah satu: Terus Menerus atau Hilang Timbul.                                   |
 
-## 2. Cara Pengisian Pemeriksaan Fisik
 
+#### 3. Riwayat Perkawinan
 <img
-  src="/keperawatan_fisik.png"
+  src="/riwayat_perkawinan.png"
   alt="Contoh tampilan form pengkajian awal medis"
   width="750"
   style={{
@@ -55,23 +91,17 @@ description: Menu ini akan menunjukkan tata cara pengisian formulir Status Kebid
   }}
 />
 
-| Variable         | Cara Pengisian                                                                                             |
-| ---------------- | ---------------------------------------------------------------------------------------------------------- |
-| Skala GCS        | Diisikan sesuai dengan tingkat kesadaran pasien berdasarkan respons mata, suara, dan gerak.                |
-| Kesadaran        | Pilih kesadaran pasien yang sesuai dengan kondisi pasien Composmentis/Apatis/Samnolen/Stupor/Coma          |
-| Nadi             | Diisi dengan jumlah denyut nadi pasien dalam satu menit (x/menit)                                          |
-| Tensi            | Diisi dengan hasil tekanan darah (tensi) pasien                                                            |
-| Suhu             | Diisi dengan tingkat suhu pasien yang telah diperiksa                                                      |
-| Respiratory Rate | Diisi dengan jumlah frekuensi napas pasien dalam satu menit                                                |
-| SPO2             | Diisi dengan persentase saturasi oksigen dalam darah                                                       |
-| Tinggi Badan     | Diisi dengan tinggi badan pasien                                                                           |
-| Berat Badan      | Diisi dengan berat badan pasien                                                                            |
-| Bagian Tubuh     | Pilih bagian tubuh yang terdapat keluhan seperti Kepala/Dada/Abdomen/Tulang Belakang/Genotalia/Ekstremitas |
+| Variable                         | Cara Pengisian                                                                          |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| Antenatal, Tempat                | Diisi dengan tempat pasien rutin melakukan pemeriksaan kehamilan (ANC)                  |
+| Frekuensi                        | Diisi dengan berapa kali pasien telah melakukan pemeriksaan kehamilan                   |
+| Keluhan Selama Hamil             | Diisi dengan keluhan yang dirasakan pasien selama masa kehamilan saat ini               |
+| Imunisasi TT                     | Dipilih jenis dan frekuensi imunisasi Tetanus Toxoid (TT) yang sudah didapatkan pasien  |
 
-## 3. Cara Pengisian Pengkajian Nyeri
 
+#### 4. Riwayat Kehamilan
 <img
-  src="/pengkajian_nyeri1.png"
+  src="/riwayat_kehamilan.png"
   alt="Contoh tampilan form pengkajian awal medis"
   width="750"
   style={{
@@ -82,30 +112,205 @@ description: Menu ini akan menunjukkan tata cara pengisian formulir Status Kebid
   }}
 />
 
-| Variable                   | Cara Pengisian                                                                                                                                |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Nyeri                      | Pilih tingkat nyeri sesuai kondisi pasien Tidak Nyeri/Sedikit Nyeri/Nyeri Sedikit Mengganggu/Mengganggu Aktivitas/Sangat Mengganggu Aktivitas |
-| Provokativ                 | Diisi dengan faktor penyebab nyeri                                                                                                            |
-| Qualitatif                 | Pilih karakter nyeri Terbakar/Tajam/Tumpul/Lainnya                                                                                            |
-| Regio                      | Diisi dengan lokasi nyeri dan dimana letak penjalaran nyeri                                                                                   |
-| Metode Pengkajian Nyeri    | Pilih jenis metode pengkajian nyeri                                                                                                           |
-| Time                       | Pilih salah satu waktu pola nyeri Terus Menerus/Hilang Timbul                                                                                 |
-| Sejak                      | Diisi dengan sejak kapan nyeri terjadi dan sudah berapa lama                                                                                  |
-| Saat Aktivitas Apa Terjadi | Diisi dengan aktivitas apa yang menyebabkan nyeri timbul                                                                                      |
-| Jenis                      | Pilih salah satu jenis sesuai kondisi pasien                                                                                                  |
-| Penandaan Lokasi Nyeri     | Pilih salah satu lokasi tubuh yang terasa nyeri                                                                                               |
-| Keterangan                 | Diisi dengan keterangan lain                                                                                                                  |
+| Variable                         | Cara Pengisian                                                                          |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| Tahun                            | Diisi tahun kejadian kehamilan/persalinan                                               |
+| Lama Hamil                       | Diisi usia kehamilan saat persalinan/abortus                                            |
+| Komplikasi Kehamilan             | Diisi komplikasi yang terjadi selama kehamilan tersebut                                 |
+| Persalinan Spontan               | Dipilih Ya/Tidak                                                                        |
+| Tindakan                         | Diisi jenis tindakan yang dilakukan                                                     |
+| Komplikasi                       | Diisi komplikasi yang terjadi saat persalinan                                           |
+| Jenis Kelamin                    | Dipilih Laki-laki, Perempuan, atau Belum Diketahui                                      |
+| Bayi/Anak BBL (gram)             | Diisi Berat Badan Lahir (BBL) dalam gram                                                |
+| Bayi/Anak Keadaan                | Diisi keadaan bayi saat ini                                                             |
+| Nifas                            | Diisi komplikasi selama masa nifas                                                      |
+| Simpan                           | Klik “simpan” setelah semua isian terisi                                                |    
+| Tabel Riwayat Pengisian          | Tombol untuk menambah/mengubah data baris riwayat                                       |
+| Riwayat KB (Jenis)               | Dipilih/dicentang jenis kontrasepsi yang pernah digunakan                               |
+| Rencana KB                       | Diisi rencana kontrasepsi yang akan digunakan setelah ini                               |
+| Simpan                           | Klik “simpan” setelah semua isian terisi                                                |
+| Tabel Riwayat Pengisian          | Tombol untuk menambah/mengubah data Riwayat KB                                          |
 
-## 4. Cara Pengisian Prosedur Invasif dan Resiko Infeksi
 
+#### 5. Riwayat Alergi
 <img
-  src="/resiko_infeksi.png"
+  src="/riwayat_alergi.png"
   alt="Contoh tampilan form pengkajian awal medis"
   width="750"
   style={{
     display: "block",
     margin: "0 auto",
     marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                          |
+| -------------------------------- | --------------------------------------------------------------------------------------- |
+| Riwayat Alergi                   | Pilih 'ya' jika memiliki riwayat alergi, pilih 'tidak' jika tidak memiliki              |
+| Penyebab Alergi                  | Diisi dengan penyebab alergi pasien                                                     |
+| Jenis Reaksi Alergi              | Diisi jenis reaksi yang timbul (misal: Gatal/Urtikaria, Sesak Napas, Mual/Muntah)       |
+| Penanganan Alergi                | Diisi penanganan yang diberikan saat alergi terjadi                                     |
+</Tab>
+
+  <Tab value="Pemeriksaan Fisik">
+    ## Pengisian Pemeriksaan Fisik
+  #### 1. Pemeriksaan Fisik Umum
+<img
+  src="/pemeriksaan_fisik_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+<img
+  src="/lanjutan_pemeriksaan_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto" /* Ini yang membuat gambar rata tengah */,
+    /** Tambahkan margin atas di sini (Misal: 20px) **/
+    marginTop: "20px",
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                  | Cara Pengisian                                                                                             |
+| ------------------------- | ---------------------------------------------------------------------------------------------------------- |
+| Skala GCS                 | Diisikan sesuai dengan tingkat kesadaran pasien berdasarkan respons mata, suara, dan gerak.                |
+| Kesadaran                 | Pilih kesadaran pasien yang sesuai dengan kondisi pasien Composmentis/Apatis/Samnolen/Stupor/Coma          |
+| Keadaan Umum              | Diisi dengan keadaaan umum pasien                                                                          |
+| Nadi                      | Diisi dengan jumlah denyut nadi pasien dalam satu menit (x/menit)                                          |
+| Tensi                     | Diisi dengan hasil tekanan darah (tensi) pasien                                                            |
+| Suhu                      | Diisi dengan tingkat suhu pasien yang telah diperiksa                                                      |
+| Respiratory Rate          | Diisi dengan jumlah frekuensi napas pasien dalam satu menit                                                |
+| SPO2                      | Diisi dengan persentase saturasi oksigen dalam darah                                                       |
+| Tinggi Badan              | Diisi dengan tinggi badan pasien                                                                           |
+| Berat Badan               | Diisi dengan berat badan pasien sekarang                                                                   |
+| Berat Badan Sebelum Hamil | Diisi dengan berat badan pasien sebelum hamil                                                              |
+| Lila                      | Diisi sesuai ukuran lingkar lengan atas                                                                    |
+| IMT                       | Diisi dengan indeks masa tubuh                                                                             |
+  
+  #### 2. Pemeriksaan Obstetri
+<img
+  src="/obstetri_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+<img
+  src="/lanjutan_obstetri.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto" /* Ini yang membuat gambar rata tengah */,
+    /** Tambahkan margin atas di sini (Misal: 20px) **/
+    marginTop: "20px",
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                          | Cara Pengisian                                                                                                                          |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------  |
+| Palpasi                           | Diisi hasil pemeriksaan palpasi abdomen                                                                                                 |
+| Leopoid 1, Tinggi Fundus Uteri    | Diisi Tinggi Fundus Uteri (TFU) dalam centimeter (Cm)                                                                                   |
+| Leopoid 2                         | Pilih posisi pungggung janin (punggung kanan/kiri)                                                                                      |
+| Leopoid 3                         | Dipilih presentasi janin pada bagian bawah (Letak Kepala/Letak Sungsang/Letak Lintang/Letak Oblign)                                     |
+| Leopoid 4                         | Diisi hasil pemeriksaan Leopold 4 (misal: Konvergen / Divergen)                                                                         |
+| TBJ                               | Diisi Taksiran Berat Janin dalam Gram                                                                                                   |
+| Nilai (N)                         | Diisi nilai Nyeri (N) pada pemeriksaan                                                                                                  |
+| HIS (10 Menit)                    | Diisi frekuensi kontraksi uterus dalam 10 menit (Kali) dan lama kontraksi dalam detik (Detik)                                           |
+| Auskultasi                        | Diisi Denyut Jantung Janin (DJJ) dalam kali per menit (X / Menit).                                                                      |
+| VT Oleh                           | Diisi nama petugas yang melakukan pemeriksaan per vaginam (VT)                                                                          |
+| Hasil                             | Diisi hasil pemeriksaan per vaginam (VT) (misal: Pembukaan, effacement, Hodge, ketuban, presentasi).                                    |
+| Bagian Tubuh                      | Pilih salah satu bagian tubuh untuk dilakukan pemeriksaan lebih (Kepadala dan Leher/Dada/Abdomen/Tulang Belakang/Genitalia/Ekstremitas) |
+
+  </Tab>
+
+
+  <Tab value="Pengkajian Nyeri">
+  ## Cara Pengisian Pengkajian Nyeri
+  
+
+  <img
+  src="/nyeri_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+<img
+  src="/lanjutan_nyeri_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto" /* Ini yang membuat gambar rata tengah */,
+    /** Tambahkan margin atas di sini (Misal: 20px) **/
+    marginTop: "20px",
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                          | Cara Pengisian                                                                                                                                |
+| --------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nyeri                             | Pilih tingkat nyeri sesuai kondisi pasien Tidak Nyeri/Sedikit Nyeri/Nyeri Sedikit Mengganggu/Mengganggu Aktivitas/Sangat Mengganggu Aktivitas |
+| Provokativ                        | Diisi dengan faktor penyebab nyeri                                                                                                            |
+| Qualitatif                        | Pilih karakter nyeri Terbakar/Tajam/Tumpul/Lainnya                                                                                            |
+| Regio                             | Diisi dengan lokasi nyeri dan dimana letak penjalaran nyeri                                                                                   |
+| Metode Pengkajian Nyeri           | Pilih jenis metode pengkajian nyeri                                                                                                           |
+| Time                              | Pilih salah satu waktu pola nyeri Terus Menerus/Hilang Timbul                                                                                 |
+| Sejak                             | Diisi dengan sejak kapan nyeri terjadi dan sudah berapa lama                                                                                  |
+| Saat Aktivitas Apa Terjadi        | Diisi dengan aktivitas apa yang menyebabkan nyeri timbul                                                                                      |
+| Jenis                             | Pilih salah satu jenis sesuai kondisi pasien                                                                                                  |
+| Penandaan Lokasi Nyeri            | Pilih salah satu lokasi tubuh yang terasa nyeri                                                                                               |
+| Keterangan                        | Diisi dengan keterangan lain                                                                                                                  |
+
+  </Tab>
+
+  <Tab value="Prosedur Invasif & Resiko Infeksi">
+   ## Cara Pengisian Prosedur Invasif & Resiko Infeksi
+  
+
+  <img
+  src="/nyeri_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+<img
+  src="/resiko_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto" /* Ini yang membuat gambar rata tengah */,
+    /** Tambahkan margin atas di sini (Misal: 20px) **/
+    marginTop: "20px",
     border: "2px solid blue",
   }}
 />
@@ -120,16 +325,33 @@ description: Menu ini akan menunjukkan tata cara pengisian formulir Status Kebid
 | Prosedur Invasif | Diisikan dengan prosedur lainnya, unit pemasangan, dan pilih tanggal pemasangan            |
 | Resiko Infeksi   | Pilih apakah terdapat resiko infeksi, apabila ada maka tambahkan keterangan resiko infeksi |
 
-## 5. Kondisi Sosial dan Psikologi
+  </Tab>
 
-<img
-  src="/kondisi_sosial_psikologi.png"
+  <Tab value="Kondisi Sosial & Psikologi">
+
+  ## Cara Pengisian Kondisi Sosial & Psikologi
+  <img
+  src="/psikologi_kebidanan.png"
   alt="Contoh tampilan form pengkajian awal medis"
   width="750"
   style={{
     display: "block",
-    margin: "0 auto",
-    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    margin: "0 auto" /* Ini yang membuat gambar rata tengah */,
+    /** Tambahkan margin atas di sini (Misal: 20px) **/
+    marginTop: "20px",
+    border: "2px solid blue",
+  }}
+/>
+
+<img
+  src="/lanjutan_psikologi_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto" /* Ini yang membuat gambar rata tengah */,
+    /** Tambahkan margin atas di sini (Misal: 20px) **/
+    marginTop: "20px",
     border: "2px solid blue",
   }}
 />
@@ -137,16 +359,22 @@ description: Menu ini akan menunjukkan tata cara pengisian formulir Status Kebid
 | Variable                                                  | Cara Pengisian                                                               |
 | --------------------------------------------------------- | ---------------------------------------------------------------------------- |
 | Status                                                    | Pilih kondisi sosial dan psikologi pasien Tenang/Cemas/Takut/Marah/DLL       |
+| Penerimaan Pasien Terhadap Kondisi Kesehatan              | Diisi dengan tanggapan pasien mengenai kondisi kesehatannya                  |
+| Penerimaan Pasien Terhadap Terhadap Kehamilan             | Diisi dengan tanggapan pasien mengenai kehamilannya                          |
 | Hubungan Pasien dengan Keluarga                           | Pilih hubungan pasien dengan keluarga Baik/Tidak Baik                        |
 | Sistem Pendukung yang Ada                                 | Pilih support system pasien Suami/Istri/Anak/Saudara/DLL                     |
 | Masalah terkait biaya di RS                               | Pilih jenis pembayaran yang digunakan pasien Ditanggung (BPJS,Asuransi)/Umum |
 | Kegiatan Menjalankan Ibadah                               | Pilih salah satu apakah pasien aktif menjalankan ibadah atau tidak           |
 | Pola keyakinan dan Nilai-nilai pribadi pasien yang dianut | Pilih sesuai keyakinan dan nilai - nilai pribadi pasien                      |
 
-## 6. Cara Pengisian Assesmen Kebutuhan Fungsional
+  </Tab>
 
-<img
-  src="/kebutuhan_fungsional.png"
+  <Tab value="Assesmen Kebutuhan Fungsional">
+
+  ## Cara Pengisian Assesmen Kebutuhan Fungsional
+
+  <img
+  src="/kebutuhan_fungsional_kebidanan.png"
   alt="Contoh tampilan form pengkajian awal medis"
   width="750"
   style={{
@@ -163,9 +391,35 @@ description: Menu ini akan menunjukkan tata cara pengisian formulir Status Kebid
 | Mandi (bathing)           | Pilih apakah pasien dapat melakukan mandi sendiri (Mampu/Butuh Bantuan/Mandiri)                               |
 | Perawatan Diri (grooming) | Pilih apakah kondisi pasien dapat melakukan perawatan diri (Membutuhkan bantuan orang lain/Mandiri)           |
 | Berpakaian (dressing)     | Pilih apakah kondisi pasien dapat mengenakan pakaian sendiri (Tergantung orang lain/Sebagian Dibantu/Mandiri) |
-| Buang air kecil (bladder) | Pilih salah satu apakah pasien termasuk inkontinensia                                                         |
-| Buang air besar (bowel)   |
-| Penggunaan Toilet         |
-| Transfer                  |
-| Mobilitas                 |
-| Naik turun tangga         |
+| Buang air kecil (bladder) | Pilih salah satu sesuai kondisi pasien                                                        |
+| Buang air besar (bowel)   | Pilih salah satu sesuai kondisi pasien
+| Penggunaan Toilet         | Pilih sesuai kondisi pasien dalam penggunaan toilet
+| Transfer                  | Pilih sesuai kondisi pasien untuk transfer
+| Mobilitas                 | Pilih mobilitas sesuai kondisi pasien 
+| Naik turun tangga         | Pilih kemampuan pasien untuk naik turun tangga
+  
+  </Tab>
+
+  <Tab value="Pengkajian Lainnya">
+   ## Cara Pengisian Assesmen Kebutuhan Fungsional
+
+  <img
+  src="/pengkajian_lain_kebidanan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                  | Cara Pengisian                                                                                                |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Pemeriksaan Penunjang     | Diisi dengan pemeriksaan penunjang yang diperlukan                                                            |
+| Kajian Lainnya            | Diisi dengan kajian lainnya                                                                                   |
+ 
+  </Tab>
+  
+</Tabs>
