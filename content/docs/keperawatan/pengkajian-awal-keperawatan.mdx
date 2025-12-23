@@ -5,10 +5,9 @@ description: Menu ini akan menunjukkan contoh formulir Pengkajian Awal Keperawat
 
 import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 
-<Tabs items={["Keperawatan", "Keperawatan Jiwa"]}>
+<Tabs items={["Keperawatan", "Pengkajian Lainnya"]}>
   <Tab value="Keperawatan">
   ## 1. Cara Pengisian Keluhan Utama
-
 <img
   src="/pengkajian_keperawatan_keluhan.png"
   alt="Contoh tampilan form pengkajian awal medis"
@@ -160,6 +159,7 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Kegiatan Menjalankan Ibadah                               | Pilih salah satu apakah pasien aktif menjalankan ibadah atau tidak           |
 | Pola keyakinan dan Nilai-nilai pribadi pasien yang dianut | Pilih sesuai keyakinan dan nilai - nilai pribadi pasien                      |
 
+
 ## 6. Cara Pengisian Assesmen Kebutuhan Fungsional
 
 <img
@@ -188,5 +188,24 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Naik turun tangga         | Pilih kemampuan pasien untuk naik turun tangga
 
   </Tab>
-  <Tab value="Keperawatan Jiwa">Keperawatan Jiwa</Tab>
+
+  <Tab value="Pengkajian Lainnya">
+  ## Pengisian Pengkajian Lainnya
+  <img
+  src="/pengkajian_keperawatan_lainnya.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+| Variable                  | Cara Pengisian                                                                                                |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Pemeriksaan Penunjang     | Diisi sesuai pemeriksaan penunjang yang perlu dilakukan oleh pasien                                           |
+| kajian lainnya            | Diisi sesuai kajian pemerikasaan lainnya                                                                      |
+
+  </Tab>
 </Tabs>
