@@ -1,3 +1,64 @@
 @import 'tailwindcss';
 @import 'fumadocs-ui/css/neutral.css';
 @import 'fumadocs-ui/css/preset.css';
+/* --- Kustomisasi Tabs Fumadocs --- */
+
+/* 1. Mengubah indikator aktif menjadi bentuk bulat (pill) */
+[role="tablist"] [role="tab"][data-state="active"] {
+    background-color:  #F9F8F6 !important; /* Warna biru (sesuaikan jika mau) */
+    color: #0C2B4E !important;              /* Warna teks saat aktif */
+    border-radius: 9999px !important;    /* Membuat bentuk lonjong/bulat */
+    border-bottom: none !important;      /* Menghilangkan garis bawah default */
+    box-shadow: none !important;         /* Menghilangkan bayangan default */
+    padding: 6px 16px !important;        /* Memberi ruang di dalam bulatan */
+    margin: 4px !important;              /* Memberi jarak antar tab */
+  }
+  
+  /* 2. Menghilangkan garis bawah pada tab yang tidak aktif */
+  [role="tablist"] [role="tab"] {
+    border-bottom: none !important;
+    transition: all 0.2s ease;           /* Efek halus saat diklik */
+  }
+  
+  /* 3. Menghilangkan garis panjang di bawah seluruh daftar tab */
+  [role="tablist"] {
+    border-bottom: none !important;
+    display: flex;
+    gap: 4px;
+  }
+
+  /* 4. Mengatur jarak antar kotak tab (spasi luar) */
+[role="tablist"] {
+    display: flex;
+    gap: 6px !important; /* Tambahkan atau perbesar nilai ini (misal: 12px atau 16px) */
+  }
+  
+  /* 5. Mengatur ruang di dalam teks agar tidak sesak (spasi dalam) */
+  [role="tab"] {
+    padding: 4px 8px !important; /* 8px atas-bawah, 16px kiri-kanan */
+    transition: all 0.2s ease;
+  }
+  
+  /* 6. Pastikan tab yang aktif tetap memiliki bentuk bulat yang rapi */
+  [role="tab"][data-state="active"] {
+    border-radius: 9999px !important;
+    /* Warna background sudah Anda atur, pastikan padding di sini sama dengan di atas */
+    padding: 8px 16px !important; 
+  }
+
+  /* 7. Memberi warna latar belakang pada header tabel */
+th {
+    background-color: #3C3D37 !important; /* Warna background*/
+    color: #F5F2F2 !important;           /* Warna teks */
+    font-weight: 700 !important;
+    text-transform: uppercase;            /* Membuat teks header menjadi huruf kapital */
+    letter-spacing: 0.05em;
+    padding: 12px !important;
+  }
+   /* Opsional: Memberi warna sedikit berbeda pada baris ganjil agar mudah dibaca */
+   tr:nth-child(even) {
+    background-color: rgba(255, 255, 255, 0.02);
+  }
+  
+
+ 
