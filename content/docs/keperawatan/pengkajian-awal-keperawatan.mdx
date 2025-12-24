@@ -5,10 +5,9 @@ description: Menu ini akan menunjukkan contoh formulir Pengkajian Awal Keperawat
 
 import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 
-<Tabs items={["Keperawatan", "Keperawatan Jiwa"]}>
-  <Tab value="Keperawatan">
-  ## 1. Cara Pengisian Keluhan Utama
-
+<Tabs items={["Keluhan Utama", "Pemeriksaan Fisik","Pengkajian Nyeri","Prosedur Invasif & Resiko Infeksi","Kondisi Sosial & Psikologi", "Assesmen Kebutuhan Fungsional","Pengkajian Lainnya"]}>
+ <Tab value="Keluhan Utama">
+  ## Cara Pengisian Keluhan Utama
 <img
   src="/pengkajian_keperawatan_keluhan.png"
   alt="Contoh tampilan form pengkajian awal medis"
@@ -44,8 +43,10 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Pemberian Obat                   | Diisikan dengan nama obat, dosis, dan lama penggunaan - klik tambah                     |
 | Perilaku Berisiko                | Pilih perilaku pasien yang beresiko dengan klik checkbox                                |
 | Perilaku Lain                    | Diisi perilaku lain pasien yang tidak disebutkan diatas                                 |
+  </Tab>
 
-## 2. Cara Pengisian Pemeriksaan Fisik
+  <Tab value="Pemeriksaan Fisik">
+## Cara Pengisian Pemeriksaan Fisik
 
 <img
   src="/keperawatan_fisik.png"
@@ -71,8 +72,10 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Tinggi Badan     | Diisi dengan tinggi badan pasien                                                                           |
 | Berat Badan      | Diisi dengan berat badan pasien                                                                            |
 | Bagian Tubuh     | Pilih bagian tubuh yang terdapat keluhan seperti Kepala/Dada/Abdomen/Tulang Belakang/Genotalia/Ekstremitas |
+</Tab>
 
-## 3. Cara Pengisian Pengkajian Nyeri
+<Tab value="Pengkajian Nyeri">
+## Cara Pengisian Pengkajian Nyeri
 
 <img
   src="/pengkajian_nyeri1.png"
@@ -112,8 +115,10 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Jenis                      | Pilih salah satu jenis sesuai kondisi pasien                                                                                                  |
 | Penandaan Lokasi Nyeri     | Pilih salah satu lokasi tubuh yang terasa nyeri                                                                                               |
 | Keterangan                 | Diisi dengan keterangan lain                                                                                                                  |
+</Tab>
 
-## 4. Cara Pengisian Prosedur Invasif dan Resiko Infeksi
+<Tab value="Prosedur Invasif & Resiko Infeksi">
+## Cara Pengisian Prosedur Invasif dan Resiko Infeksi
 
 <img
   src="/resiko_infeksi.png"
@@ -136,8 +141,10 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Dower Chateter   | Diisikan dengan unit pemasangan chateter dan tanggal pemasangan                            |
 | Prosedur Invasif | Diisikan dengan prosedur lainnya, unit pemasangan, dan pilih tanggal pemasangan            |
 | Resiko Infeksi   | Pilih apakah terdapat resiko infeksi, apabila ada maka tambahkan keterangan resiko infeksi |
+</Tab>
 
-## 5. Kondisi Sosial dan Psikologi
+<Tab value="Kondisi Sosial & Psikologi">
+## Kondisi Sosial dan Psikologi
 
 <img
   src="/kondisi_sosial_psikologi.png"
@@ -159,8 +166,10 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Masalah terkait biaya di RS                               | Pilih jenis pembayaran yang digunakan pasien Ditanggung (BPJS,Asuransi)/Umum |
 | Kegiatan Menjalankan Ibadah                               | Pilih salah satu apakah pasien aktif menjalankan ibadah atau tidak           |
 | Pola keyakinan dan Nilai-nilai pribadi pasien yang dianut | Pilih sesuai keyakinan dan nilai - nilai pribadi pasien                      |
+</Tab>
 
-## 6. Cara Pengisian Assesmen Kebutuhan Fungsional
+<Tab value="Assesmen Kebutuhan Fungsional">
+## Cara Pengisian Assesmen Kebutuhan Fungsional
 
 <img
   src="/kebutuhan_fungsional.png"
@@ -186,7 +195,25 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Transfer                  | Pilih sesuai kondisi pasien untuk transfer
 | Mobilitas                 | Pilih mobilitas sesuai kondisi pasien 
 | Naik turun tangga         | Pilih kemampuan pasien untuk naik turun tangga
+</Tab>
+
+  <Tab value="Pengkajian Lainnya">
+  ## Pengisian Pengkajian Lainnya
+  <img
+  src="/pengkajian_keperawatan_lainnya.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+| Variable                  | Cara Pengisian                                                                                                |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------- |
+| Pemeriksaan Penunjang     | Diisi sesuai pemeriksaan penunjang yang perlu dilakukan oleh pasien                                           |
+| kajian lainnya            | Diisi sesuai kajian pemerikasaan lainnya                                                                      |
 
   </Tab>
-  <Tab value="Keperawatan Jiwa">Keperawatan Jiwa</Tab>
 </Tabs>

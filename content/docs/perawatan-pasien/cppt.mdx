@@ -4,9 +4,94 @@ description: Catatan Perawatan Pasien Terintegrasi
 ---
 import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
-<Tabs items={['CPPT', 'Preview', 'HandOver']}>
-  <Tab value="CPPT">
-  ## Cara Pengisian CPPT
+<Tabs items={['Dokter', 'Perawat', 'Apoteker', 'Gizi', 'Fisioterapis']}>
+  <Tab value="Dokter">
+    ## Tampilan Pengisian CPPT Dokter
+  ### 1. CPPT SOAP
+  <img
+  src="/cppt_soap_dokter.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                                                                                                                        |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Subjektif                        | Diisi dengan data yang diperoleh dari keluhan pasien atau apa yang pasien rasakan dan katakan                                                                                         |
+| Objektif                         | Diisi dengan hasil pemeriksaan pasien seperti suhu tubuh, tekanan darah, respiratory rate, dll                                                                                        |
+| Assesmen                         | Diisi dengan diagnosis medis, diagnosis keperawatan, atau status perkembangan kondisi pasien (apakah membaik, tetap, atau memburuk).                                                  |
+| Plan                             | Diisi dengan rencana tindakan yang akan dilakukan untuk menangani masalah pasien                                                                                                      |                                                                                                                                                           |
+
+### 2. CPPT SBAR
+    <img
+  src="/cppt_sbar_dokter.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                                                                                                                        |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Situasi                          | Diisi sesuai kondisi pasien terkini                                                                                                                                                   |
+| Latar Belakang                   | Diisi dengan informasi klinis yang relevan dengan situasi saat ini untuk memberikan konteks                                                                                           |
+| Assesmen                         | Diisi dengan diagnosis medis, diagnosis keperawatan, atau status perkembangan kondisi pasien (apakah membaik, tetap, atau memburuk).                                                  |
+| Rekomendasi                      | Diisi sesuai rencana tindakan yang akan dilakukan                                                                                                                                     |                                                                                                                                                           
+  
+    ### 2. CPPT Instruksi
+    <img
+  src="/cppt_instruksi_dokter.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                                                                                         |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Instruksi Dokter                 |Diisi dengan instruksi atau arahan tindak lanjut yang sesuai dengan arahan dokter                                                                       |
+
+## Tampilan Preview CPPT Dokter
+ <img
+  src="/cppt_preview_dokter.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+<Callout title="Pemberitahuan" type="warn">
+  "Verifikasi CPPT pada laman dokter belum dapat dilakukan karena fitur verifikasi belum terakomodasi di dalam sistem."
+</Callout>
+
+| Variable                         | Cara Pengisian                                                                                                                                                                        |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Preview                          | Digunakan untuk menampilkan hasil pengisian CPPT yang telah disimpan sehingga pengguna meninjau kembali data secara lengkap sebelum melakukan langkah selanjutnya                     |
+| Profesi                          | Pilih profesi yang ingin dilihat di preview                                                                                                                                           |
+| Tanggal verif SOAP               | Pilih tanggal verif SOAP yang ingin dilihat                                                                                                                                           |
+| Button Edit                      | Memperbaiki pengisian SOAP atau SBAR yang ingin di ubah                                                                                                                               |                                                                                                                                                           
+| Button hapus                     | Digunakan untuk menghapus atau membatalkan catatan SOAP atau SBAR  
+  </Tab>
+
+  <Tab value="Perawat">
+  ## Tampilan Pengisian CPPT Perawat
   ### 1. Subjektif
   <img
   src="/cppt_subjektif.png"
@@ -46,7 +131,7 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   style={{
     display: "block",
     margin: "0 auto",
-    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    marginTop: "20px" /* Ini yang membuat gambar rata tengah */,
     border: "2px solid blue",
   }}
 />
@@ -169,10 +254,11 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 | Nama Analisis                    | Diisi dengan nama analisis                                                                                                     |
 | Jam Perawat/Bidan                | Diisi dengan tanggal dan waktu pengisian perawat/bidan                                                                         |
 | Nama Perawat/Bidan               | Diisi dengan nama perawat/bidan                                                                                                |
-  </Tab>
-
-  <Tab value="Preview">
-  ## Cara Penggunaan Preview
+| Jam DPJP                         | Diisi dengan tanggal dan waktu pengisian DPJP                                                                                  |
+| Nama DPJP                        | Diisi dengan nama DPJP pasien                                                                                                  |
+| Advis                            | Diisi dengan instruksi medis, saran pengobatan, atau rencana tindakan yang diberikan dokter                                    |
+ 
+ ## Tampilan Preview Perawat
   <img
   src="/cppt_preview.png"
   alt="Contoh tampilan form pengkajian awal medis"
@@ -190,11 +276,9 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 | Preview                          | Digunakan untuk menampilkan hasil pengisian CPPT yang telah disimpan sehingga pengguna meninjau kembali data secara lengkap sebelum melakukan langkah selanjutnya |
 | Button Edit                      | Memperbaiki pengisian SOAP atau SBAR yang ingin di ubah                                                                                                           |
 | Button HandOver                  | Digunakan untuk menyerahkan atau meneruskan informasi CPPT kepada shift atau petugas berikutnya                                                                   |
-  </Tab>
 
-  <Tab value="HandOver">
-  ## Cara Penggunaan HandOver
-  ### 1. Tampilan HandOver
+## Tampilan HandOver Perawat
+### 1. Tampilan HandOver
     <img
   src="/cppt_handover.png"
   alt="Contoh tampilan form pengkajian awal medis"
@@ -248,7 +332,7 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   style={{
     display: "block",
     margin: "0 auto",
-    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    marginTop: "20px" /* Ini yang membuat gambar rata tengah */,
     border: "2px solid blue",
   }}
 />
@@ -256,6 +340,93 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 | Variable                              | Cara Pengisian                                                                                                                                                        |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Tampilan History HandOver (Penerima)  | Pilih button  untuk menerima hand over dari petugas sebelumnya. Apabila petugas telah menerima tetapi ingin membatalkan maka klik button batal                        |
+  </Tab>
+
+  <Tab value="Apoteker">
+  ## Tampilan CPPT Apoteker
+  ### 1. Pengisian SOAP 
+  <img
+  src="/cppt_apt.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+| Variable                         | Cara Pengisian                                                                                                                             |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
+| Subjektif                        | Diisi dengan data yang diperoleh dari keluhan pasien atau apa yang pasien rasakan dan katakan                                              |
+| Objektif                         | Diisi dengan data objectif terkait penggunaan obat                                                                                         |
+| Assesmen                         | Diisi dengan analisis atau penilaian apoteker terhadap terapi obat                                                                         |
+| Plan                             | Diisi dengan rencana tindakan lanjut kefarmasian                                                                                           |                                                                                                                                                           |
+
+  ### 2. Pengisian SBAR
+  <img
+  src="/cppt_apt_sbar.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+| Variable                         | Cara Pengisian                                                                                                                                        |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Situasi                          | Diisi sesuai kondisi pasien terkini obat                                                                                                              |
+| Latar Belakang                   | Diisi dengan riwayat pasien yang relevan terkait masalah obat                                                                                         |
+| Assesmen                         | Diisi dengan hasil analisis apoteker (penilaian)                                                                                                      |
+| Rekomendasi                      | Diisi dengan saran atau tindak lanjut yang diusulkan apoteker kepada dokter                                                                           |                                                                                                                                                           
  
+  ### 3. Pengisian Intruksi
+   <img
+  src="/cppt_instruksi_apt.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+| Variable                         | Cara Pengisian                                                                                                     |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| Instruksi Apoteker               | Diisikan dengan instruksi atau arahan tindak lanjut yang harus dilakukan berdasarkan kondisi pasien               |
+
+   ## Tampilan Preview Apoteker
+   <img
+  src="/cppt_preview_apt.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                                                                                                                        |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Preview                          | Digunakan untuk menampilkan hasil pengisian CPPT yang telah disimpan sehingga pengguna meninjau kembali data secara lengkap sebelum melakukan langkah selanjutnya                     |
+| Profesi                          | Pilih profesi yang ingin dilihat di preview                                                                                                                                           |
+| Button Edit                      | Memperbaiki pengisian SOAP atau SBAR yang ingin di ubah                                                                                                                               |                                                                                                                                                           
+| Button hapus                     | Digunakan untuk menghapus atau membatalkan catatan SOAP atau SBAR                                                                                                                     |
+  </Tab>
+
+  <Tab value="Gizi">
+  <Callout title="Pemberitahuan" type="warn">
+  "Saat ini tampilan fitur CPPT untuk user Gizi sedang dalam tahap pengembangan.."
+  </Callout>
+  </Tab>
+  <Tab value="Fisioterapis">
+   <Callout title="Pemberitahuan" type="warn">
+  "Saat ini tampilan fitur CPPT untuk user fisioterapis sedang dalam tahap pengembangan.."
+  </Callout>
   </Tab>
 </Tabs>
