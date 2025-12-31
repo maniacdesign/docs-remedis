@@ -6,7 +6,7 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
 <Tabs items={['Dokter', 'Perawat', 'Apoteker', 'Gizi', 'Fisioterapis']}>
   <Tab value="Dokter">
-    ## Tampilan Pengisian CPPT Dokter
+    ## Tampilan Pengisian CPPT Dokter 
   ### 1. CPPT SOAP
   <img
   src="/cppt_soap_dokter.png"
@@ -20,12 +20,12 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                         | Cara Pengisian                                                                                                                                                                        |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Subjektif                        | Diisi dengan data yang diperoleh dari keluhan pasien atau apa yang pasien rasakan dan katakan                                                                                         |
-| Objektif                         | Diisi dengan hasil pemeriksaan pasien seperti suhu tubuh, tekanan darah, respiratory rate, dll                                                                                        |
-| Assesmen                         | Diisi dengan diagnosis medis, diagnosis keperawatan, atau status perkembangan kondisi pasien (apakah membaik, tetap, atau memburuk).                                                  |
-| Plan                             | Diisi dengan rencana tindakan yang akan dilakukan untuk menangani masalah pasien                                                                                                      |                                                                                                                                                           |
+| Variable                         | Cara Pengisian                                                                                                                                                                                                                                       |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Subjektif                        | Diisi dengan data yang diperoleh dari keluhan pasien atau apa yang pasien rasakan dan katakan. Contoh : Pasien mengeluh nyeri perut kanan bawah, dirasakan tajam, hilang timbul sejak 2 jam lalu                                                     |                                                                                         |
+| Objektif                         | Diisi dengan hasil pemeriksaan pasien seperti suhu tubuh, tekanan darah, respiratory rate, dll. Contoh : KU: Tampak sakit sedang. Thorax: Vesikuler +/+, Rhonki -/-, Wheezing -/-. Abdomen: Distensi (-), BU (+) normal. Lab: Hb 10.2, WBC 12.000    |                                                                                        |
+| Assesmen                         | Diisi dengan diagnosis medis, diagnosis keperawatan, atau status perkembangan kondisi pasien (apakah membaik, tetap, atau memburuk). Contoh : Nyeri akut belum teratasi, gangguan mobilitas fisik.                                                   |
+| Plan                             | Diisi dengan rencana tindakan yang akan dilakukan untuk menangani masalah pasien. Contoh : Observasi TTV, ajarkan teknik relaksasi, bantu mobilisasi miring                                                                                          |                                                                                                                                                           |
 
 ### 2. CPPT SBAR
     <img
@@ -40,12 +40,12 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                         | Cara Pengisian                                                                                                                                                                        |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Situasi                          | Diisi sesuai kondisi pasien terkini                                                                                                                                                   |
-| Latar Belakang                   | Diisi dengan informasi klinis yang relevan dengan situasi saat ini untuk memberikan konteks                                                                                           |
-| Assesmen                         | Diisi dengan diagnosis medis, diagnosis keperawatan, atau status perkembangan kondisi pasien (apakah membaik, tetap, atau memburuk).                                                  |
-| Rekomendasi                      | Diisi sesuai rencana tindakan yang akan dilakukan                                                                                                                                     |                                                                                                                                                           
+| Variable                         | Cara Pengisian                                                                                                                                                                                                                                                                                                               |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Situasi                          | Diisi sesuai kondisi pasien terkini. Contoh : Pasien mengalami sesak napas berat secara tiba-tiba disertai penurunan saturasi oksigen hingga 88% dengan nasal canula 4 lpm                                                                                                                                                   |                                                                                                                                                   |
+| Latar Belakang                   | Diisi dengan informasi klinis yang relevan dengan situasi saat ini untuk memberikan konteks. Contoh : Pasien masuk 2 jam lalu dengan diagnosis gagal jantung kongestif (CHF). Riwayat hipertensi tidak terkontrol. Pasien sudah mendapatkan injeksi Furosemide 20mg di IGD namun urine output masih minimal                  |
+| Assesmen                         | Diisi dengan diagnosis medis, diagnosis keperawatan, atau status perkembangan kondisi pasien (apakah membaik, tetap, atau memburuk). Contoh : Kesadaran Compos Mentis, TD: 170/100 mmHg, HR: 110x/menit, RR: 28x/menit. Terdapat suara ronkhi basah halus di kedua lapang paru bawah. Saya mencurigai adanya edema paru akut |
+| Rekomendasi                      | Diisi sesuai rencana tindakan yang akan dilakukan. Contoh : Observasi ulang frekuensi napas dan suara mengi 15 menit setelah nebulisasi. Jika tidak membaik, lapor kembali untuk pertimbangan rawat ICU                                                                                                                      |                                                                                                                                                           
   
     ### 2. CPPT Instruksi
     <img
@@ -60,9 +60,9 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                         | Cara Pengisian                                                                                                                                         |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| Instruksi Dokter                 |Diisi dengan instruksi atau arahan tindak lanjut yang sesuai dengan arahan dokter                                                                       |
+| Variable                         | Cara Pengisian                                                                                                                                                                                                  |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Instruksi Dokter                 |Diisi dengan instruksi atau arahan tindak lanjut yang sesuai dengan arahan dokter. Contoh : 1. Pasang O2 nasal canula 3 lpm. 2. Berikan Inhalasi Ventolin 1 respule. 3. Cek Gas Darah Arteri (AGD) 1 jam lagi.   |
 
 ## Tampilan Preview CPPT Dokter
  <img
@@ -109,7 +109,7 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Waktu Pengisian                  | Pilih tanggal dan jam pengisian formulir                                                                                                                                              |
 | Metode                           | Pilih 'SOAP' untuk mencatat perkembangan pasien sesuai standar, Pilih metode SBAR apabila perlu menyampaikan informasi penting secara jelas, singkat, dan membutuhkan tindakan segera |
-| Subjektif                        | Isi dengan data yang diperoleh dari keluhan pasien atau apa yang pasien rasakan dan katakan                                                                                           |
+| Subjektif                        | Isi dengan data yang diperoleh dari keluhan pasien atau apa yang pasien rasakan dan katakan. Contoh : Pasien mengeluh sulit tidur karena nyeri pada luka operasi di perut             |
 
 ### 2. Objektif
   <img
@@ -138,15 +138,15 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
 | Variable                         | Cara Pengisian                                                                                                                                                 |
 | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Keadaan Umum                     | Pilih salah satu keadaaan umum pasien yang sesuai dengan kondisi pasien                                                                                        |
-| Kesadaran                        | Pilih kondisi kesadaran pasien                                                                                                                                 |
-| Sistole/Diastole                 | Diisi sesuai hasil pemeriksaan tekanan darah pasien                                                                                                            |
-| Nadi                             | Diisi dengan jumlah denyut nadi pasien dalam satu menit (x/menit).                                                                                             |
-| Suhu                             | Diisi sesuai hasil pemeriksaan suhu tubuh pasien                                                                                                               |  
-| Respirasi Ratio                  | Diisi dengan jumlah frekuensi napas pasien dalam satu menit.                                                                                                   |
-| Berat Badan                      | Diisi sesuai berat badan pasien                                                                                                                                |
-| Tinggi Badan                     | Diisi sesuai tinggi badan pasien                                                                                                                               |
-| Objektif Lainnya                 | Diisi dengan hasil pemeriksaan objektif lainnnya                                                                                                               |
+| Keadaan Umum                     | Pilih salah satu keadaaan umum pasien yang sesuai dengan kondisi pasien. Contoh : KU: KU: Lemah                                                                |
+| Kesadaran                        | Pilih kondisi kesadaran pasien. Contoh : kesadaran Compos Mentis (GCS 15)                                                                                      |
+| Sistole/Diastole                 | Diisi sesuai hasil pemeriksaan tekanan darah pasien. Contoh : 120/80 mmHg                                                                                      |
+| Nadi                             | Diisi dengan jumlah denyut nadi pasien dalam satu menit (x/menit). Contoh : 88/menit                                                                           |
+| Suhu                             | Diisi sesuai hasil pemeriksaan suhu tubuh pasien. Contoh : 38°C                                                                                                |  
+| Respirasi Ratio                  | Diisi dengan jumlah frekuensi napas pasien dalam satu menit. Contohnya : 20/menit                                                                              |
+| Berat Badan                      | Diisi sesuai berat badan pasien. Contoh : 56kg                                                                                                                 |
+| Tinggi Badan                     | Diisi sesuai tinggi badan pasien. Contoh : 165cm                                                                                                               |
+| Objektif Lainnya                 | Diisi dengan hasil pemeriksaan objektif lainnnya. Contoh : Luka operasi pada abdomen tampak bersih, tidak ada rembesan darah.                                  |                                                                                                     |
 
  ### 3. Assesmen
   <img
@@ -178,9 +178,11 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                         | Cara Pengisian                                                                                                                                                                                                                                                                                                                   |
-| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Plan                             | Isi dengan rencana tindakan yang akan dilakukan berdasarkan asesmen untuk mengatasi masalah                                                                                                                                                                                                                                      |
+| Variable                         | Cara Pengisian                                                                                                                                                                                   |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| Plan                             | Isi dengan rencana tindakan keperawatan yang akan dilakukan berdasarkan asesmen untuk mengatasi masalah. Contoh : Observasi tanda-tanda vital setiap 4 jam, Kolaborasi pemberian infus RL 20 tpm |                                                                                                                                           
+| Waktu tindakan (jam)             | Isi dengan estimasi durasi atau waktu yang dibutuhkan setelah intervensi dilakukan. Contoh : 3 x 24 (jam) atau 8 (jam)                                                                           |
+| Kriteria Hasil                   | Pilih satu atau lebih indikator keberhasilan sesuai kondisi pasien. Ambulasi Meningkat/Konservasi Energi Meningkat/Tingkat Keletihan Menurun                                                     |
 
 ### 3. Instruksi
 #### a.  Instruksi SOAP
@@ -196,9 +198,9 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                         | Cara Pengisian                                                                                                     |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Instruksi                        | Diisikan dengan instruksi atau arahan tindak lanjut yang harus dilakukan berdasarkan kondisi pasien                |
+| Variable                         | Cara Pengisian                                                                                                                                     |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Instruksi                        | Diisikan dengan instruksi atau arahan tindak lanjut yang harus dilakukan berdasarkan kondisi pasien. Contoh : Monitor saturasi oksigen tiap 2 jam  |
 
 #### b.  Instruksi SBAR
   <img
@@ -213,13 +215,13 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                         | Cara Pengisian                                                                                                                 |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| Instruksi                        | Diisikan dengan instruksi atau arahan tindak lanjut yang harus dilakukan berdasarkan kondisi pasien                            |
-| Pemberi Profesi (dropdown)       | Pilih salah satu profesi yang memberikan intruksi seperti perawat, dokter, atau tenaga kesehatan lainnya sesuai kewenangannya  |
-| Nama Pemberi Profesi (input)     | Diisi dengan nama pemberi intruksi                                                                                             |
-| Penerima Instruksi (dropdown)    | Pilih salah satu profesi yang menerima intruksi seperti perawat, dokter, atau tenaga kesehatan lainnya sesuai kewenangannya    |
-| Nama Penerima Instruksi (input)  | Diisi dengan nama pemberi intruksi                                                                                             |
+| Variable                         | Cara Pengisian                                                                                                                                                                           |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Instruksi                        | Diisikan dengan instruksi atau arahan tindak lanjut yang harus dilakukan berdasarkan kondisi pasien. Contoh : Instruksi dr. Budi: Berikan drip Lasix 20 mg sekarang, pasang kateter urin |                            |
+| Pemberi Profesi (dropdown)       | Pilih salah satu profesi yang memberikan intruksi seperti perawat, dokter, atau tenaga kesehatan lainnya sesuai kewenangannya                                                            |
+| Nama Pemberi Profesi (input)     | Diisi dengan nama pemberi intruksi                                                                                                                                                       |
+| Penerima Instruksi (dropdown)    | Pilih salah satu profesi yang menerima intruksi seperti perawat, dokter, atau tenaga kesehatan lainnya sesuai kewenangannya                                                              |
+| Nama Penerima Instruksi (input)  | Diisi dengan nama pemberi intruksi                                                                                                                                                       |
 
 
 ### 4. Nilai Kritis
@@ -241,7 +243,7 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   style={{
     display: "block",
     margin: "0 auto",
-    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    marginTop: "20px" /* Ini yang membuat gambar rata tengah */,
     border: "2px solid blue",
   }}
 />
@@ -311,7 +313,9 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 | Variable                              | Cara Pengisian                                                                                                                                                        |
 | ------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Tampilan History HandOver (Pengirim)  | Pilih button hapus untuk membatalkan pengiriman hand over,  Pembatalan pengiriman hand over hanya bisa dilakukan oleh user yang mengirim                              |
- 
+| 
+
+
   ### 3. Tampilan History HandOver (Penerima) 
        <img
   src="/cppt_handover_penerima.png"
@@ -356,12 +360,11 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
     border: "2px solid blue",
   }}
 />
-| Variable                         | Cara Pengisian                                                                                                                             |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------ |
-| Subjektif                        | Diisi dengan data yang diperoleh dari keluhan pasien atau apa yang pasien rasakan dan katakan                                              |
-| Objektif                         | Diisi dengan data objectif terkait penggunaan obat                                                                                         |
-| Assesmen                         | Diisi dengan analisis atau penilaian apoteker terhadap terapi obat                                                                         |
-| Plan                             | Diisi dengan rencana tindakan lanjut kefarmasian                                                                                           |                                                                                                                                                           |
+| Variable                         | Cara Pengisian                                                                                                                                                                                                                                |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Subjektif                        | Diisi dengan data yang diperoleh dari keluhan pasien atau apa yang pasien rasakan dan katakan. Contoh : Pasien mengeluh mual ringan, tidak ada riwayat alergi antibiotik                                                                      |
+| Assesmen                         | Diisi dengan analisis atau penilaian apoteker terhadap terapi obat. Contoh : Dosis tidak tepat (Overdose): Penggunaan Levofloxacin pada pasien gangguan ginjal ($ClCr < 50$ mL/menit) memerlukan penyesuaian dosis                            |                                                                         |
+| Plan                             | Diisi dengan rencana tindakan lanjut kefarmasian. Contoh : Rekomendasi penyesuaian dosis ke dr. Sp.PD (Telah dikonfirmasi: Dosis diubah menjadi 250mg per 48 jam); Monitor fungsi ginjal (ureum/kreatinin) setiap 3 hari                      |                                                                                |                                                                                                                                                           |
 
   ### 2. Pengisian SBAR
   <img
@@ -375,12 +378,12 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
     border: "2px solid blue",
   }}
 />
-| Variable                         | Cara Pengisian                                                                                                                                        |
-| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Situasi                          | Diisi sesuai kondisi pasien terkini obat                                                                                                              |
-| Latar Belakang                   | Diisi dengan riwayat pasien yang relevan terkait masalah obat                                                                                         |
-| Assesmen                         | Diisi dengan hasil analisis apoteker (penilaian)                                                                                                      |
-| Rekomendasi                      | Diisi dengan saran atau tindak lanjut yang diusulkan apoteker kepada dokter                                                                           |                                                                                                                                                           
+| Variable                         | Cara Pengisian                                                                                                                                                                                                 |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Situasi                          | Diisi sesuai kondisi pasien terkini obat. Contoh : Melaporkan perlunya penyesuaian dosis antibiotik Levofloxacin untuk Tn. B di bangsal Anggrek karena penurunan fungsi ginjal                                 |
+| Latar Belakang                   | Diisi dengan riwayat pasien yang relevan terkait masalah obat. Contoh : Pasien memiliki riwayat CKD tahap 4. Hasil Lab terbaru menunjukkan Creatinine Clearance (ClCr) pasien adalah 25 mL/menit               |
+| Assesmen                         | Diisi dengan hasil analisis apoteker (penilaian). Contoh : Dosis Levofloxacin 500mg/hari terlalu tinggi untuk ClCr 25 mL/menit. Berisiko menyebabkan efek samping saraf (kejang) dan akumulasi obat            |                                                                                                     
+| Rekomendasi                      | Diisi dengan saran atau tindak lanjut yang diusulkan apoteker kepada dokter. Contoh : Saya rekomendasikan penyesuaian dosis menjadi: Dosis awal 500mg, dilanjutkan 250mg setiap 48 jam. Apakah dokter setuju?  |                                                                                                                                                           
  
   ### 3. Pengisian Intruksi
    <img
@@ -394,9 +397,9 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
     border: "2px solid blue",
   }}
 />
-| Variable                         | Cara Pengisian                                                                                                     |
-| -------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
-| Instruksi Apoteker               | Diisikan dengan instruksi atau arahan tindak lanjut yang harus dilakukan berdasarkan kondisi pasien               |
+| Variable                         | Cara Pengisian                                                                                                                                                            |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Instruksi Apoteker               | Diisikan dengan instruksi atau arahan tindak lanjut yang harus dilakukan berdasarkan kondisi pasien. Contoh : Berikan obat Acarbose tepat saat suapan pertama makan besar |
 
    ## Tampilan Preview Apoteker
    <img
