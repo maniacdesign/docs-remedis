@@ -1,4 +1,63 @@
 ---
 title: Cara Keluar
-description: Menu kajian awal tenaga Medis
+description: Menu ini digunakan untuk mencatat kondisi dan status pasien saat mengakhiri perawatan di fasilitas pelayanan kesehatan
 ---
+### 1. Pengisian Tanggal Keluar, Diagnosis, & Tindakan
+<img
+  src="/cara_keluar.png"
+  alt="Contoh tampilan form asuhan farmasi"
+  width="750"
+  style={{
+    display: "block",
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                               |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------  |
+| Tanggal KRS                                          | Pilih tanggal sesuai tanggal pulang pasien                                                                                   |
+| Indikasi Dirawat                                     | Berisi ringkasan kondisi klinis atau keluhan utama pasien                                                                    |
+| Diagnosa Masuk                                       | Berisi diagnosis awal berdasarkan hasil pemeriksaan awal dokter, Contoh : Obs. Dyspnea ec Congestive Heart Failure.          |
+| Jenis Diagnosa                                       | Pilih jenis diagnosa apakah diagnosa pasien tergolong jenis Primer/Sekunder                                                  |
+| Kode ICD-10                                          | Diisi kode ICD - 10 yang sesuai dengan diagnosa dokter, Contoh : N18.5 (CKD), I10 (Hipertensi)                               |
+| Kasus                                                | Pilih jenis kasus perawatan pasien, apakah tergolong kasus Lama/Baru, Contoh : Lama (Kasus Kontrol CAPD)                     |
+| Jenis Tindakan                                       | Pilih Klasifikasi jenis tindakan medis yang dilakukan (Utama/Lainnya )                                                       |
+| Kode ICD-9                                           | Diisi kode ICD - 9 sesuai dengan tindakan atau prosedur yang dilakukan, Contoh : 54.98 (Peritoneal Dialysis)                 |
+
+
+### 2. Pengisian Terapi Pengobatan Selama Dirawat
+<img
+  src="/terapi_obat_keluar.png"
+  alt="Contoh tampilan form asuhan farmasi"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+<img
+  src="/cont_terapi_obat_keluar.png"
+  alt="Contoh tampilan form asuhan farmasi"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginTop: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                             |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------  |
+| Diit                             | Diisi dengan jenis diet pasien sesuai kondisi klinis, Contoh : Rendah Garam, Rendah Protein 0.6g/kgBB.                                                                            |
+| Farmakologi                      | Diisi sesuai dengan obat-obatan yang diberikan kepada pasien, Contoh : Candesartan 1x8mg, Amlodipine 1x10mg.                                                                      |
+| Terapi Lain                      | Diisi sesuai dengan terapi non-obat yang dilakukan, Contoh : Latihan gerak aktif di rumah (ROM).                                                                                  |
+| Hasil Pemeriksaan Penting        | Diisi dengan hasil pemeriksaan penunjang yang bermakna, Contoh : Hb terakhir 10.2 g/dL, Ureum 95 mg/dL.                                                                           |
+| Konsultasi                       | Diisi jika ada konsultasi dengan bagian lain, Contoh : Konsul Sp.JP (Jantung) & Sp.GK (Gizi).                                                                                     |
+| Instruksi                        | Diisi dengan instruksi medis/tindak lanjut untuk tenaga kesehatan, Contoh : Kontrol Poli Interna 06/01/2026. Jika sesak hebat segera ke IGD.                                      |
+| Prognosa                         | Diisi dengan perkiraan kondisi pasien ke depan, Contoh : Dubia ad Bonam (Harapan sembuh baik).                                                                                    |
+| Kondisi saat keluar              | Pilih salah satu kondisi yang sesuai dengan kondisi pasien saat pulang, Contoh : TD: 130/80 mmHg, Nadi: 82x/mnt, Suhu: 36.6℃, Kesadaran: Composmentis.                           |
+| Follow up                        | Pilih rencana tindak lanjut pasien setelah perawatan/transfer, Contoh : Kontrol Poli Interna (Unit CAPD) tgl 06/01/2026. Lanjutkan perawatan luka exit site secara mandiri.       |
