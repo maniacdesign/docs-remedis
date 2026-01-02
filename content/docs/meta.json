@@ -3,6 +3,7 @@
   "pages": [
     "index",
     "pasien",
+    "komunikasi-antar-unit",
     "medis",
     "keperawatan",
     "kebidanan",
@@ -11,7 +12,9 @@
     "perawatan-pasien",
     "neonatologi",
     "nicu",
-    "cara-keluar"
+    "cara-keluar",
+    "---",
+    "rawat-jalan"
   ],
   "defaultOpen": true
 }
