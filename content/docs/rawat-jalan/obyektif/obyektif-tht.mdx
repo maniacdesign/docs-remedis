@@ -1,0 +1,89 @@
+---
+title: Obyektif THT
+description: Berikut merupakan tampilan obyektif pada poli onkologi
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs items={['THT', 'Telinga','Hidung', 'Unggah Penunjang']} defaultIndex={1}>
+  <Tab value="THT">
+  <img 
+  src="/tht.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                                                                                                                                                     |
+| -------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pemeriksaan fisik                | Diisi dengan hasil temuan umum pada pemeriksaan fisik pasien secara menyeluruh. Contoh : keadaan umum pasien, kesadaran, dan tanda vital                                           |                                    
+| Gambar Tenggorokkan              | Berikan tanda lingkaran pada gambar dengan klik "Coretan Tablet" untuk menandai area yang bermasalah. Contoh :  amandel yang membesar atau adanya bercak pada diagram anatomi      |                                                                          
+| Catatan Tenggorokan              | Diisi deskripsikan temuan spesifik pada tenggorokan seperti kondisi uvula, tonsil (amandel), dan faring.                                                                           |
+| Kepala                           | Diisi dengan hasil inspeksi dan palpasi pada bagian kepala secara umum. Contoh : Normocephalic, tidak ada massa, tidak ada nyeri tekan pada sinus                                  |
+| Leher                            | Diisi dengan temuan pada area leher, seperti mobilitas atau adanya kaku kuduk.                                                                                                     |
+| Pembesaran Kelenjar Getah Bening | Tentukan apakah ada pembengkakan pada kelenjar getah bening di area leher atau belakang telinga                                                                                    |                           
+  </Tab>
+
+  <Tab value="Telinga">
+  <img 
+  src="/telinga_tht.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                                                                                                                                                     |
+| -------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Gambar Telinga                   | Berikan tanda lingkaran dengan klik "Coretan Tablet" untuk menandai letak kelainan secara visual pada diagram telinga.                                                             |
+| Liang Telinga                    | Pilih kondisi liang telinga sesuai kondisi pasien. Kemudian tambahkan keterangan jika diperlukan                                                                                   |
+| Membran Timpani                  | Pilih kondisi membran timpani sesuai kondisi pasien. Apabila pilihan kondisi tidak ada yang sesuai maka tambahkan pada bagian "lain - lain"                                        |
+| Kavum Timpani                    | Pilih kondisi kavum timpani sesuai kondisi pasien. Apabila pilihan kondisi tidak ada yang sesuai maka tambahkan pada bagian "lain - lain"                                          |
+| Lain - lain                      | Diisi apabila terdapat temuan tambahan yang tidak masuk kategori di atas. Contoh : kondisi belakang telinga/retroaurikuler                                                         |
+| Kesimpulan                       | Diisi dengan diagnosis kerja atau ringkasan hasil pemeriksaan yang paling menonjol                                                                                                 |
+| Anjuran                          | Diisi dengan instruksi untuk pasien atau rencana tindakan selanjutnya. Contoh : Jaga telinga agar tetap kering (jangan kemasukan air), kontrol 1 minggu lagi, minum obat rutin     |
+
+  </Tab>
+
+  <Tab value="Hidung">
+
+  <img 
+  src="/telinga_tht.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                                                                                                                                                     |
+| -------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Gambar Hidung                    | Berikan tanda lingkaran dengan klik "Coretan Tablet" untuk menandai letak kelainan secara visual pada diagram telinga.                                                             |
+| Kavum Nasi                       | Pilih kondisi kavum nasi sesuai kondisi pasien                                                                                                                                     |
+| Konka Inferior                   | Pilih kondisi konka inferior sesuai kondisi pasien                                                                                                                                 |
+| Meatus Medius                    | Pilih kondisi meatus medius sesuai kondisi pasien                                                                                                                                  |
+| Septum                           | Pilih kondisi septum sesuai kondisi pasien                                                                                                                                         |
+| Nasofaring                       | Pilih kondisi nasofaring sesuai kondisi pasien                                                                                                                                     |
+| Lain - lain                      | Diisi apabila terdapat temuan tambahan yang tidak masuk kategori di atas. Contoh : Post-Nasal Drip (+), darah mengalir di dinding faring, atau nyeri tekan sinus (+).              |
+| Kesimpulan                       | Diisi dengan instruksi untuk pasien atau rencana tindakan selanjutnya. Contoh : Rhinitis Alergi dengan Septum Deviasi, atau Sinusitis Maksilaris Akut                              |
+  </Tab>
+
+  <Tab value="Unggah Penunjang">
+  <Callout title="Information" type="warn">
+  Unggah penunjang sama seperti uraian pada poli penyakit dalam jantung, kandungan, saraf, jiwa **Inpatient**. 
+  Untuk melihat 'unggah penunjang poli jantung', silakan merujuk ke [Obyektif Penyakit Dalam](/docs/rawat-jalan/obyektif/obyektif-penyakit-dalam).
+  </Callout>
+  </Tab>
+  
+</Tabs>

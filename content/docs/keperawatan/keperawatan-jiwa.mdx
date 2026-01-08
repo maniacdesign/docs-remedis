@@ -18,12 +18,12 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                                             | Cara Pengisian                                                                                                                             |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------         |
-| Waktu Pengisian                                      | Diisi sesuai tanggal dan  pengisian pengkajian awal                                                                                        |
-| Alasan Masuk                                         | Diisi sesuai alasan masuk pasien, informan yang menrangkan kondisi pasien, dan hubungan informasn dengan pasien                            |
-| Faktor Predisposisi                                  | Diisi berdasarkan riwayat masa lalu, kondisi biologis, psikologis, sosial, maupun lingkungan pasien.                                       |
-| Masalah Keperawatan                                  | Diisi sesuai masalah keperawatan yang dialami                                                                                              |
+| Variable                                             | Cara Pengisian                                                                                                                                                                                                                                                                                                                                        |
+| ---------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------         |
+| Waktu Pengisian                                      | Diisi sesuai tanggal dan  pengisian pengkajian awal                                                                                                                                                                                                                                                                                                   |
+| Alasan Masuk                                         | Diisi sesuai alasan masuk pasien, informan yang menrangkan kondisi pasien, dan hubungan informasn dengan pasien, Contoh : Alasan Masuk : "Pasien mengamuk, memecahkan kaca jendela tetangga, dan tidak tidur selama 3 hari karena mendengar suara bisikan", Hubungan dengan Pasien "Keluarga (Istri pasien) dan rekam medis lama."                    |
+| Faktor Predisposisi                                  | Diisi berdasarkan riwayat masa lalu, kondisi biologis, psikologis, sosial, maupun lingkungan pasien, Contoh : "Pasien pernah menjadi korban kekerasan fisik (dipukul) oleh ayahnya saat remaja. Ada riwayat menyayat lengan sendiri (self-harm) 1 minggu yang lalu."                                                                                  |
+| Masalah Keperawatan                                  | Diisi sesuai masalah keperawatan yang dialami, Contoh : Risiko Perilaku Kekerasan                                                                                                                                                                                                                                                                     |
   </Tab>
 
 
@@ -49,19 +49,21 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
 | Variable                                             | Cara Pengisian                                                                                                                             |
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------         |
-| Kesadaran                                            | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Keadaaan Umum                                        | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Pernafasan                                           | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Tekanan Darah                                        | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Berat Badan                                          | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Status Eliminasi                                     | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Riwayat Haid                                         | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Haid Terakhir                                        | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Haid Teratur                                         | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Nyeri Haid                                           | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Keluhan Fisik                                        | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Kelainan/ Tanda-Tanda Fisik Khusus                   | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Bagian Tubuh                                         | Diisi sesuai kondisi tubuh pasien                                                                                                          |
+| Kesadaran                                            | Pilih satu sesuai respon pasien                                                                                                            |
+| Keadaaan Umum                                        | Deskripsi visual kondisi pasien saat ini, Contoh : Tampak sakit sedang, lemas.                                                             |
+| Pernafasan                                           | Diisi Frekuensi napas dalam 1 menit, Contoh 20 / Menit                                                                                     |
+| Nadi                                                 | Diisi Masukkan frekuensi denyut nadi dalam satu menit, Contoh : 88 / Menit                                                                 |
+| Tekanan Darah                                        | Diisi Masukkan angka tekanan darah sistolik per diastolik, Contoh : 120/80 /mmHg                                                           |
+| Berat Badan                                          | Diisi suhu tubuh hasil pengukuran termometer, Contoh : 36.8℃                                                                              |
+| Berat Badan                                          | Diisi berat badan dalam Kg dan tinggi dalam Cm, Contoh : BB: 65 Kg, TB: 170 Cm                                                             |
+| Status Eliminasi                                     | Pilih kondisi BAK dan BAB (Normal, Inkontinensia, Retensio, atau Konstipasi), Contoh : Konstipasi (Belum BAB 2 hari)                       |
+| Riwayat Haid                                         | Pilih status menstruasi saat ini (Haid aktif, Menopause, atau Tidak Diketahui)                                                             |
+| Haid Terakhir                                        | Input tanggal hari pertama haid terakhir (HPHT) dan lama siklusnya.                                                                        |
+| Haid Teratur                                         | Pilih apakah pola datang bulan teratur atau tidak.                                                                                         |
+| Nyeri Haid                                           | Pilih Ya jika ada keluhan nyeri/kram, atau Tidak.                                                                                          |
+| Keluhan Fisik                                        | Tuliskan keluhan yang dirasakan pasien terkait fisiknya saat ini, Contoh : Pusing berputar dan mual.                                       |
+| Kelainan/ Tanda-Tanda Fisik Khusus                   | Deskripsikan temuan abnormal (objektif) pada bagian tubuh yang dipilih, Contoh : Nyeri tekan pada ulu hati (epigastrium).                  |
+| Bagian Tubuh                                         | Pilih area spesifik yang akan diperiksa (Kepala, Dada, Abdomen, dll), Contoh : Abdomen                                                     |
   </Tab>
 
   <Tab value="Pengkajian Nyeri">
@@ -88,20 +90,19 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 /> 
 
-| Variable                                             | Cara Pengisian                                                                                                                             |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------         |
-| Nyeri                                                | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Provokativ                                           | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Qualitatif                                           | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Regio                                                | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Metode Pengkajian Nyeri                              | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Time                                                 | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Sejak                                                | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Saat Aktivitas Apa Terjadi                           | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Jenis                                                | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Penandaan Lokasi Nyeri                               | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-| Keterangan                                           | Diisi sesuai kondisi tubuh pasien                                                                                                          |
-
+| Variable                   | Cara Pengisian                                                                                                                                                          |
+| -------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nyeri                      | Pilih tingkat nyeri sesuai kondisi pasien Tidak Nyeri/Sedikit Nyeri/Nyeri Sedikit Mengganggu/Mengganggu Aktivitas/Sangat Mengganggu Aktivitas                           |
+| Provokativ                 | Diisi dengan faktor penyebab nyeri, Contoh : Nyeri bertambah saat bergerak, berkurang saat istirahat.                                                                   |
+| Qualitatif                 | Pilih karakter nyeri Terbakar/Tajam/Tumpul/Lainnya                                                                                                                      |
+| Regio                      | Diisi dengan lokasi nyeri dan dimana letak penjalaran nyeri, Contoh : Lokasi: Ulu hati. Penjalaran: Ke punggung belakang.                                               |
+| Metode Pengkajian Nyeri    | Pilih jenis metode pengkajian nyeri                                                                                                                                     |
+| Time                       | Pilih salah satu waktu pola nyeri Terus Menerus/Hilang Timbul, Contoh : 2 jam yang lalu atau Sejak kemarin sore (pukul 17.00).                                          |
+| Sejak                      | Diisi dengan sejak kapan nyeri terjadi dan sudah berapa lama, Contoh : 15 menit setiap serangan atau Sudah berlangsung selama 3 hari.                                   |
+| Saat Aktivitas Apa Terjadi | Diisi dengan aktivitas apa yang menyebabkan nyeri timbul, Contoh : Saat sedang menaiki tangga atau Muncul setelah mengonsumsi makanan pedas.                            |
+| Jenis                      | Pilih salah satu jenis sesuai kondisi pasien                                                                                                                            |
+| Penandaan Lokasi Nyeri     | Pilih salah satu lokasi tubuh yang terasa nyeri                                                                                                                         |
+| Keterangan                 | Diisi dengan observasi tambahan, detail kronologi yang belum tercatat, respon pasien terhadap nyeri, atau tindakan mandiri yang sudah dilakukan pasien sebelum ke RS.   |
 
   </Tab>
   <Tab value="Indikasi Resiko">
@@ -131,18 +132,18 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 /> 
 
 
-| Variable                                             | Cara Pengisian                                                                                                                             |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------         |
-| Umur                                                 | Diisi sesuai kondisi pasien                                                                                                          |
-| Status Mental                                        | Diisi sesuai kondisi pasien                                                                                                          |
-| Eliminasi                                            | Diisi sesuai kondisi pasien                                                                                                          |
-| Medikasi                                             | Diisi sesuai kondisi pasien                                                                                                          |
-| Diagnosis                                            | Diisi sesuai kondisi pasien                                                                                                          |
-| Ambulansi                                            | Diisi sesuai kondisi pasien                                                                                                          |
-| Nutrisi                                              | Diisi sesuai kondisi pasien                                                                                                          |
-| Nutrisi                                              | Diisi sesuai kondisi pasien                                                                                                          |
-| Gangguan Tidur                                       | Diisi sesuai kondisi pasien                                                                                                          |
-| Riwayat Jatuh                                        | Diisi sesuai kondisi pasien                                                                                                          |
+| Variable                                             | Cara Pengisian                                                                                                                                           |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------         |
+| Umur                                                 | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Status Mental                                        | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Eliminasi                                            | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Medikasi                                             | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Diagnosis                                            | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Ambulansi                                            | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Nutrisi                                              | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Nutrisi                                              | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Gangguan Tidur                                       | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Riwayat Jatuh                                        | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
 
 #### 2. Resiko Dekubitus
 <img
@@ -160,11 +161,11 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
 | Variable                                             | Cara Pengisian                                                                                                                             |
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------         |
-| Kondisi Baik                                         | Diisi sesuai kondisi pasien                                                                                                          |
-| Kondisi Mental                                       | Diisi sesuai kondisi pasien                                                                                                          |
-| Aktifitas                                            | Diisi sesuai kondisi pasien                                                                                                          |
-| Mobilitas                                            | Diisi sesuai kondisi pasien                                                                                                          |
-| Inkontenesia                                         | Diisi sesuai kondisi pasien                                                                                                          |
+| Kondisi Baik                                         | Pilih kategori sesuai kondisi pasien saat ini.                                                                                             |
+| Kondisi Mental                                       | Pilih kategori sesuai kondisi pasien saat ini.                                                                                             |
+| Aktifitas                                            | Pilih kategori sesuai kondisi pasien saat ini.                                                                                             |
+| Mobilitas                                            | Pilih kategori sesuai kondisi pasien saat ini.                                                                                             |
+| Inkontenesia                                         | Pilih kategori sesuai kondisi pasien saat ini.                                                                                             |
   
 
 #### 3. Resiko Melakukan Kekerasan
@@ -192,12 +193,12 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 /> 
 
 
-| Variable                                             | Cara Pengisian                                                                                                                             |
-| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------         |
-| Agresi Verbal (x1)                                   | Diisi sesuai kondisi pasien                                                                                                          |
-| Agresi Properti (x1)                                 | Diisi sesuai kondisi pasien                                                                                                          |
-| Agresi Diri (x3)                                     | Diisi sesuai kondisi pasien                                                                                                          |
-| Agresi Fisik (x4)                                    | Diisi sesuai kondisi pasien                                                                                                          |
+| Variable                                             | Cara Pengisian                                                                                                                                           |
+| ---------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------         |
+| Agresi Verbal (x1)                                   | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Agresi Properti (x1)                                 | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Agresi Diri (x3)                                     | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
+| Agresi Fisik (x4)                                    | Pilih kategori sesuai kondisi pasien saat ini.                                                                                                           |
 
 #### 4. Resiko Lari 
 <img
@@ -214,7 +215,7 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
 | Variable                                             | Cara Pengisian                                                                                                                             |
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------         |
-| Resiko Lari                                          | Diisi sesuai kondisi pasien                                                                                                          |
+| Resiko Lari                                          | Pilih kategori sesuai kondisi pasien saat ini.                                                                                             |
 
 #### 5. Resiko Bunuh Diri
 <img
@@ -281,10 +282,10 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
 | Variable                                             | Cara Pengisian                                                                                                                       |
 | ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------         |
-| BB                                                   | Diisi sesuai kondisi pasien                                                                                                          |
-| TB                                                   | Diisi sesuai kondisi pasien                                                                                                          |
-| Question BB Turun                                    | Diisi sesuai kondisi pasien                                                                                                          |
-| Question Makan Berkurang                             | Diisi sesuai kondisi pasien                                                                                                          |
+| BB                                                   | Pilih kategori sesuai kondisi pasien saat ini.                                                                                       |
+| TB                                                   | Pilih kategori sesuai kondisi pasien saat ini.                                                                                       |
+| Question BB Turun                                    | Pilih kategori sesuai kondisi pasien saat ini.                                                                                       |
+| Question Makan Berkurang                             | Pilih kategori sesuai kondisi pasien saat ini.                                                                                       |
  
  </Tab>
 
@@ -300,17 +301,17 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                                | Cara Pengisian                                                                                          |
-| --------------------------------------- | ------------------------------------------------------------------------------------------------------  |
-| Gambaran Diri                           | Diisi dengan Sikap atau persepsi pasien terhadap diri sendiri                                           |
-| Identitas Diri                          | Diisi sesuai identitas diri pasien                                                                      |
-| Peran                                   | Diisi dengan peran pasien dan hambatan yang dirasakan saat ini dalam menjalankan peran tersebut         |
-| Ideal Diri                              | Diisi dengan gambaran diri yang ideal berdasarkan persepsi pasien                                       |
-| Harga Diri                              | Diisi dengan penilaian pasien terhadap hasil pencapaian diri                                            |
-| Hubungan Sosial                         | Diisi dengan penilaian bagaimana pasien berinteraksi dengan lingkungan sekitarnya                       |
-| Spiritual                               | Diisi dengan penilaian keyakinan pasien dari segi Spiritual                                             |
-| Masalah Keperawatan                     | Diisi diagnosa keperawatan yang muncul                                                                  |
-| Genogram (Kotak Kosong Kanan)           | Diisi dengan gambaran genogram (silsilah atau keturunan untuk melihat faktor keturunan perawatan jiwa)  |
+| Variable                                | Cara Pengisian                                                                                                                                                              |
+| --------------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------  |
+| Gambaran Diri                           | Diisi dengan Sikap atau persepsi pasien terhadap diri sendiri, Contoh : Merasa malu karena bekas luka operasi di wajah.                                                     |
+| Identitas Diri                          | Diisi sesuai identitas diri pasien, Contoh : Pasien adalah seorang ibu rumah tangga dengan 2 anak.                                                                          |
+| Peran                                   | Diisi dengan peran pasien dan hambatan yang dirasakan saat ini dalam menjalankan peran tersebut, Contoh : Tidak bisa menjalankan peran sebagai ayah karena sakit.           |
+| Ideal Diri                              | Diisi dengan gambaran diri yang ideal berdasarkan persepsi pasien, Contoh : Ingin cepat sembuh agar bisa bekerja kembali.                                                   |
+| Harga Diri                              | Diisi dengan penilaian pasien terhadap hasil pencapaian diri, Contoh : Merasa tidak berguna karena tidak memiliki penghasilan.                                              |
+| Hubungan Sosial                         | Diisi dengan penilaian bagaimana pasien berinteraksi dengan lingkungan sekitarnya, Contoh : Sangat dekat dengan adik; tidak aktif di lingkungan rumah.                      |
+| Spiritual                               | Diisi dengan penilaian keyakinan pasien dari segi Spiritual, Contoh : Yakin penyakit adalah ujian; rajin berdoa/sholat.                                                     |
+| Masalah Keperawatan                     | Diisi diagnosa keperawatan yang muncul, Contoh : Harga Diri Rendah Situasional.                                                                                             |
+| Genogram (Kotak Kosong Kanan)           | Diisi dengan gambaran genogram (silsilah atau keturunan untuk melihat faktor keturunan perawatan jiwa)                                                                      |
 
 #### 2. Status Mental
 <img
@@ -338,19 +339,19 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 />
 
 | Variable                      | Cara Pengisian                                                                                   |
-| ----------------------------- | -----------------------------------------------------------------------------------------------  |
-| Penampilan                    | Diisi dengan penilaian cara berpakaian dan kebersihan diri pasien                                |
-| Pembicaraan                   | Diisi dengan penilaian cara pasien berkomunikasi secara verbal                                   |
-| Aktivitas Motorik             | Diisi dengan hasil pengamatan gerakan tubuh dan tingkat aktivitas fisik pasien                   |
-| Suasana Perasaaan             | Diisi dengan hasil penilaian kondisi emosional yang dirasakan pasien                             |
-| Interaksi                     | Diisi dengan apakah pasien kooperatif, bermusuhan, curiga, atau mudah tersinggung saat ditanya   |
-| Presepsi                      | Diisi dengan penilaian petugas terhadap persepsi pasien                                          |
-| Proses Pikir                  | Diisi dengan penilaian petugas terhadap bagaimana cara berpikir pasien                           |
-| Tingkat Kesadaran             | Diisi dengan penilaian tingkat kesadaran pasien                                                  |
-| Memori                        | Diisi dengan penilaian terhadap tingkat kemampuan mengingat pasien                               |
-| Konsentrasi Menghitung        | Diisi dengan penilaian petugas terhadap konsentrasi pasien saat menghitung                       |
-| Daya Titik Diri               | Diisi dengan kemampuan pasien dalam mengambil keputusan                                          |
-| Masalah Keperawatan           | Diisi diagnosa keperawatan yang muncul                                                           |
+| ----------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------  |
+| Penampilan                    | Diisi dengan penilaian cara berpakaian dan kebersihan diri pasien, Contoh : Pakaian tidak rapi, rambut kusam, kuku kotor.                                                      |
+| Pembicaraan                   | Diisi dengan penilaian cara pasien berkomunikasi secara verbal, Contoh : Bicara lambat, suara pelan, namun mampu menjawab.                                                     |
+| Aktivitas Motorik             | Diisi dengan hasil pengamatan gerakan tubuh dan tingkat aktivitas fisik pasien, Contoh : Tampak gelisah, terus mondar-mandir (agitan).                                         |
+| Suasana Perasaaan             | Diisi dengan hasil penilaian kondisi emosional yang dirasakan pasien, Contoh : Datar (ekspresi wajah tidak berubah saat bicara).                                               |
+| Interaksi                     | Diisi dengan apakah pasien kooperatif, bermusuhan, curiga, atau mudah tersinggung saat ditanya, Contoh : Kooperatif namun kontak mata kurang.                                  |
+| Presepsi                      | Diisi dengan penilaian petugas terhadap persepsi pasien, Contoh : Halusinasi pendengaran (mendengar suara bisikan).                                                            |
+| Proses Pikir                  | Diisi dengan penilaian petugas terhadap bagaimana cara berpikir pasien, Contoh : Koheren (nyambung), tidak ada waham.                                                          |
+| Tingkat Kesadaran             | Diisi dengan penilaian tingkat kesadaran pasien, Contoh : Composmentis. Pasien mengenali perawat, tahu ia berada di RS, dan tahu hari ini adalah Selasa.                       |
+| Memori                        | Diisi dengan penilaian terhadap tingkat kemampuan mengingat pasien, Contoh : Daya ingat baik, mampu mengingat menu sarapan.                                                    |
+| Konsentrasi Menghitung        | Diisi dengan penilaian petugas terhadap konsentrasi pasien saat menghitung, Contoh : Baik. Pasien mampu menghitung mundur dari 100 dikurangi 7 hingga 5 urutan tanpa salah.    |
+| Daya Titik Diri               | Diisi dengan kemampuan pasien dalam mengambil keputusan, Contoh : Pasien menyadari dirinya sakit dan butuh bantuan.                                                            |
+| Masalah Keperawatan           | Diisi diagnosa keperawatan yang muncul, Contoh : Gangguan Persepsi Sensori: Halusinasi Pendengaran.                                                                            |
 
 #### 3. Kebutuhan Persiapan Pulang
 <img
@@ -365,10 +366,10 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                      | Cara Pengisian                                                                                   |
-| ----------------------------- | -----------------------------------------------------------------------------------------------  |
-| Kemampuan menyediakan diri    | Diisi dengan kemandirian dalam melakukan aktivitas dasar sehari-hari.                                |
-| Masalah Keperawatan           | Diisi dengan kesimpulan pengkajian keperawatan sebelumnya                                   |
+| Variable                      | Cara Pengisian                                                                                                                                                   |
+| ----------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------  |
+| Kemampuan menyediakan diri    | Diisi dengan kemandirian dalam melakukan aktivitas dasar sehari-hari, Contoh : Mampu makan sendiri, namun mandi harus diingatkan.                                |
+| Masalah Keperawatan           | Diisi dengan kesimpulan pengkajian keperawatan sebelumnya, Contoh : Defisit Perawatan Diri (Mandi dan Berpakaian).                                               |
 
 ### Mekanisme Koping
 <img
@@ -383,10 +384,10 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
   }}
 />
 
-| Variable                      | Cara Pengisian                                                                                       |
-| ----------------------------- | ---------------------------------------------------------------------------------------------------  |
-| mekanisme koping              | Diisi dengan penilaian bagaimana cara pasien merespons atau menyelesaikan masalah/stres yang dihadap |
-| Masalah Keperawatan           | Diisi dengan kesimpulan pengkajian keperawatan sebelumnya                                            |
+| Variable                      | Cara Pengisian                                                                                                                                                            |
+| ----------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------  |
+| mekanisme koping              | Diisi dengan penilaian bagaimana cara pasien merespons atau menyelesaikan masalah/stres yang dihadap, Contoh : Adaptif: Pasien berbicara pada perawat jika merasa cemas.  |
+| Masalah Keperawatan           | Diisi dengan kesimpulan pengkajian keperawatan sebelumnya, Contoh : Kesiapan Peningkatan Manajemen Kesehatan.                                                             |
 </Tab>
 
 
@@ -441,9 +442,9 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
     border: "2px solid blue",
   }}
 /> 
-| Variable                  | Cara Pengisian                                                                                                |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Pemeriksaan Penunjang     | Diisi dengan pemeriksaan penunjang yang diperlukan                                                            |
-| Kajian Lainnya            | Diisi dengan kajian lainnya                                                                                   |
+| Variable                  | Cara Pengisian                                                                                                                                                                        |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pemeriksaan Penunjang     | Diisi dengan pemeriksaan penunjang yang diperlukan, Contoh : Lab (29/12): Hb 9.8 (Anemia), Leukosit 14.500 (Infeksi). Ro Thorax: Infiltrat di apeks paru kanan.                       |
+| Kajian Lainnya            | Diisi dengan kajian lainnya, Contoh : Pasien tinggal sendiri dan tidak ada keluarga di kota ini. Pasien rutin minum jamu pegal linu selama 1 tahun terakhir.                          |
   </Tab>	
 </Tabs>

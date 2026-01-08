@@ -1,0 +1,60 @@
+---
+title: Obyektif Anak
+description: Berikut merupakan tampilan obyektif pada Poli Anak
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Anak', 'Deteksi Dini GPPH', 'Deteksi Dini Autis M-Chat', 'Unggah Penunjang']}>
+  <Tab value="Anak">
+
+  <Callout title="Information" type="warn">
+  Tabs anak sama seperti berisi pemeriksaan medis meliputi pemeriksaan fisik dan penandaan pada anatomi gambar seperti poli lain, 
+  silakan merujuk ke [Obyektif Penyakit Dalam](/docs/rawat-jalan/obyektif/obyektif-penyakit-dalam).
+  </Callout>
+
+  </Tab>
+
+
+  <Tab value="Deteksi Dini GPPH">
+  <img
+  src="/deteksi_dini_gpph.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+  />
+
+| Variable                         | Cara Pengisian                                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Isian Parameter                  | Pilih jawaban parameter sesuai dengan kondisi pasien                                              |
+  </Tab>
+
+  <Tab value="Deteksi Dini Autis M-Chat">
+  <img
+  src="/deteksi_autis.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+  />
+
+| Variable                         | Cara Pengisian                                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------------------------- |
+| Isian Parameter                  | Pilih jawaban parameter sesuai dengan kondisi pasien                                              |
+ 
+  </Tab>
+  <Tab value="Unggah Penunjang">
+  <Callout title="Information" type="warn">
+  Unggah penunjang sama seperti uraian pada poli penyakit dalam jantung, kandungan, saraf, jiwa **Inpatient**. 
+  Untuk melihat 'unggah penunjang poli jantung', silakan merujuk ke [Obyektif Penyakit Dalam](/docs/rawat-jalan/obyektif/obyektif-penyakit-dalam).
+  </Callout>
+  </Tab>
+</Tabs>

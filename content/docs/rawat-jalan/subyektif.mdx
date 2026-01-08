@@ -1,0 +1,439 @@
+---
+title: Subyektif
+description: Formulir ini digunkan untuk mencatat keluhan dan riwayat kesehatan pasien berdasarkan informasi yang disampaikan oleh pasien saat kunjungan rawat jalan
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs items={['Anamnesis', 'Pemeriksaan Fisik','Skrining Gizi', 'Konseling Gizi', 'Pengkajian Nyeri', 'Psikososial', 'Fungsional', 'Edukasi', 'Asuhan Keperawatan']} defaultIndex={1}>
+  <Tab value="Anamnesis">
+  <img
+  src="/anamnesis_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+  />
+
+  <img
+  src="/cont_anamnesis_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    marginTop: "10px" /* Ini yang membuat gambar rata tengah */,
+    marginButtom: "30px",
+    border: "2px solid blue",
+  }}
+  />
+
+| Variable                         | Cara Pengisian                                                                                                                                             |
+| -------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Keluhan (diisi perawat)          | Diisi keluhan pasien (diisi oleh perawat)                                                                                                                  |
+| Keluhan (diisi dokter)           | Diisi keluhan pasien (diisi oleh dokter)                                                                                                                   |
+| Riwayat Penyakit Sekarang        | Pilih “tidak ada” jika tidak ada penyakit sekarang, pilih “ada,sebutkan” dan tulis di tabel isian jika ada penyakit sekarang yang diderita pasien          |
+| Riwayat Penyakit Dahulu          | Pilih “tidak ada” jika tidak ada riwayat penyakit, pilih “ada,sebutkan” dan tulis di tabel isian jika ada penyakit sekarang yang diderita pasien           |
+| Riwayat Penyakit Keluarga        | Pilih “tidak ada” jika tidak ada riwayat penyakit keluarga, pilih “ada,sebutkan” dan tulis di tabel isian jika ada riwayat penyakit keluarga yang diderita |
+| Riwayat Transfusi                | Pilih “tidak” jika tidak ada riwayat transfusi, dan pilih “Ya, sebutkan” jika ada riwayat transfusi serta isikan tanggal riwayat transfusi pada isian tabel|
+| Riwayat Operasi                  | Pilih tidak” jika tidak ada riwayat Operasi, dan pilih “Ya, sebutkan” jika ada riwayat Operasi serta isikan tanggal riwayat operasi pada isian tabel       |
+| Riwayat Alergi Obat              | Pilih “tidak ada” jika tidak ada riwayat obat, pilih “ada,sebutkan” dan tulis di tabel isian jika ada riwayat obat dan alergi                              |
+| Riwayat Alergi Makanan           | Pilih “tidak ada” jika tidak ada riwayat alergi makanan, pilih “ada,sebutkan” dan tulis di tabel isian jika ada riwayat alergi makanan                     |
+| Riwayat Alergi Udara             | Pilih “tidak ada” jika tidak ada riwayat alergi udara, pilih “ada,sebutkan” dan tulis di tabel isian jika ada riwayat alergi udara                         |
+| Riwayat Alergi Lainnya           | pilih “tidak ada” jika tidak ada riwayat alergi lainnya, pilih “ada,sebutkan” dan tulis di tabel isian jika ada riwayat alergi lainnya                     |
+| Anamnesa                         | Pilih salah satu metode anamnesa yang dilakukan                                                                                                            |
+
+  </Tab>
+  
+  <Tab value="Pemeriksaan Fisik">
+    <img
+  src="/anamnesis_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+  />
+
+| Variable                         | Cara Pengisian                                                                                                                                             |
+| -------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Keadaan Umum                     | Diisi keluhan pasien (diisi oleh perawat)                                                                                                                  |
+| Kesadaran                        | Diisi keluhan pasien (diisi oleh dokter)                                                                                                                   |
+| Skala GCS                        | Pilih angka sesuai kondisi pada “mata”, "Suara", dan "Gerakan" pasien                                                                                      |
+| Tekanan Darah                    | Diisi dengan tekanan darah pasien                                                                                                                          |
+| Nadi                             | Diisi dengan nilai nadi pasien                                                                                                                             |
+| Suhu                             | Diisi nilai suhu pasien                                                                                                                                    |
+| Respiratory Rate (RR)            | Diisi dengan nilai respiratory rate pasien                                                                                                                 |
+| SO2                              | Diisi dengan nilai SO2 pasien                                                                                                                              |
+| Berat Badan (BB)                 | Diisi dengan berat badan pasien                                                                                                                            |
+| Tinggi Badan (TB)                | Diisi dengan tinggi badan pasien                                                                                                                           |
+| Lain - Lain                      | Diisi dengan kondisi lain pasien                                                                                                                           |
+| Lingkar Kepala (Bayi)            | Diisi dengan nilai lingkar kepala bayi                                                                                                                     |
+| Lingkar Dada (Bayi)              | Diisi dengan nilai lingkar dada bayi                                                                                                                       |
+  </Tab>
+
+  <Tab value="Skrining Gizi">
+  <img
+  src="/skrining_gizi_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginTop: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+  />
+
+  <img
+  src="/cont_skrining_gizi_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginTop: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+  />
+
+| Variable                                             | Cara Pengisian                                                                                                                                             |
+| ---------------------------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Skrining Gizi                                        | Diisi keluhan pasien (diisi oleh perawat)                                                                                                                  |
+| Berat Badan (BB)                                     | Diisi dengan berat badan pasien                                                                                                                            |
+| Tinggi Badan (TB)                                    | Diisi dengan tinggi badan pasien                                                                                                                           |
+| Berat Badan Turun                                    | Pilih “tidak” jika berat badan tidak turun, dan pilih “Ya, ada penurunan” jika ada ada penurunan berat badan                                               |
+| Nafsu Makan Turun                                    | Pilih “tidak” jika nafsu makan tidak turun, dan pilih “Ya” jika ada ada penurunan nafsu makan                                                              |
+| Malnutisi Screening tool (MST) untuk pasien dewasa   | Diisi sesuai kondisi gizi pasien                                                                                                                           |                                                                                                                          
+| Malnutrisi Strong Kids untuk pasien anak             | Diisi sesuai kondisi gizi pasien                                                                                                                           |
+  </Tab>
+
+  <Tab value="Konseling Gizi">
+  <img
+  src="/konseling_gizi_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    
+  }}
+  />
+
+  <img
+  src="/konseling_gizi_rj_dua.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+<img
+  src="/konseling_gizi_rj_tiga.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+ 
+  }}
+  />
+  | Variable                                             | Cara Pengisian                                                                                                        |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------|
+| Tanggal                                                | Diisi tanggal konseling gizi yang dilakukan                                                                           |
+| Dokter penanggung jawab                                | Diisi nama dokter penanggungjawab pasien                                                                              |
+| Berat badan                                            | Diisi berat badan pasien                                                                                              |
+| Tinggi Badan                                           | Diisi Tinggi badan pasien                                                                                             |
+| Hasil pemeriksaan lab / pemeriksaan klinis penting     | Diisi sesuai kondisi pasien                                                                                           |
+| Diagnosis medis                                        | Diisi diagnosis medis pasien                                                                                          |
+| Pengobatan penting                                     | Diisi pengobatan penting                                                                                              |
+| Diet yang dianjurkan                                   | Diet yang dianjurkan                                                                                                  |
+| Pengkajian gizi                                        | Diisi dengan hasil pengkajian gizi pada pasien                                                                        |
+| Antopometri                                            | Diisi antopometri sesuai kondisi pasien                                                                               |
+| Biokimia                                               | Diisi antopometri sesuai kondisi pasien                                                                               |
+| Fisik/klinis                                           | Diisi fisik/klinis pasien                                                                                             |
+| Riwayat Gizi                                           | Diisi riwayat gizi pasien                                                                                             |
+| Riwayat Personal                                       | Diisi riwayat personal pasien                                                                                         |
+| Diagnosis Gizi                                         | Diisi diagnosis gizi pasien                                                                                           |
+| Intervensi Gizi                                        | Diisi diagnosis gizi pasien                                                                                           |
+| Rencana monitoring dan Evaluasi gizi                   | Diisi rencana monitoring dan evaluasi gizi                                                                            |
+  </Tab>
+
+  <Tab value="Pengkajian Nyeri">
+  <img
+  src="/pengkajian_nyeri_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+  <img
+  src="/pengkajian_nyeri_rj_cont.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+ 
+  }}
+  />
+
+| Variable                                               | Cara Pengisian                                                                                                        |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------|
+| Apakah ada keluhan nyeri ?                             | Diisi tanggal konseling gizi yang dilakukan                                                                           |
+| Metode                                                 | Pilih salah satu metode pengajikan nyeri yang dilakukan                                                               |
+| Wong Baker Faces Pain Rating Scale                     | Dipilih skala nyeri sesuai kondisi pasien                                                                             |
+| Penyebab nyeri                                         | Dipilih salah satu “trauma” atau “non trauma”                                                                         |
+| Lokasi nyeri                                           | Diisi dengan bagian tubuh yang nyeri                                                                                  |
+| Lama Nyeri                                             | Diisi dengan lama nyeri yang dirasakan                                                                                |
+| Frekuensi Nyeri                                        | Dipilih salah satu pilihan yang tersedia sesuai kondisi pasien                                                        |
+| Menjalar                                               | Diisi dengan kondisi nyeri apakah menjalar atau tidak                                                                 |
+| Saat                                                   | Dipilih kondisi sesuai kapan nyeri dirasakan pasien                                                                   |
+| Rasa Nyeri                                             | Dipilih sesuai kondisi nyeri pasien                                                                                   |
+| Kualitas nyeri                                         | Dipilih sesuai kondisi nyeri pasien                                                                                   |
+| Beritahukan ke dokter                                  | Dipilih salah satu pilihan                                                                                            |
+  </Tab>
+
+  <Tab value="Psikososial">
+  <img
+  src="/psikososial_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+  <img
+  src="/psikososial_rj_cont.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+ 
+  }}
+  />
+
+| Variable                                               | Cara Pengisian                                                                                                        |
+| ------------------------------------------------------ | ----------------------------------------------------------------------------------------------------------------------|
+| Tahu penyakitnya                                       | Diisi tanggal konseling gizi yang dilakukan                                                                           |
+| Status Psikologis                                      | Pilih salah satu metode pengajikan nyeri yang dilakukan                                                               |
+| Bahasa keseharian                                      | Dipilih skala nyeri sesuai kondisi pasien                                                                             |
+| Komunikasi                                             | Dipilih salah satu “trauma” atau “non trauma”                                                                         |
+| Bahasa isyarat                                         | Diisi dengan lama nyeri yang dirasakan                                                                                |
+| Hambatan                                               | Dipilih salah satu pilihan yang tersedia sesuai kondisi pasien                                                        |
+| Perlu penerjemah                                       | Diisi dengan kondisi nyeri apakah menjalar atau tidak                                                                 |
+| Asuransi                                               | Dipilih kondisi sesuai kapan nyeri dirasakan pasien                                                                   |
+| Kepercayaan/budaya                                     | Dipilih sesuai kondisi nyeri pasien                                                                                   |
+| Sosial ekonomi                                         | Dipilih sesuai kondisi nyeri pasien                                                                                   |
+| Kebutuhan spiritual                                    | Dipilih salah satu pilihan                                                                                            |
+| Keluarga terdekat                                      | Diisi dengan nama keluarga dan hubungan dengan pasien                                                                 |
+| Support Keluarga                                       | Dipilih sesuai dengan kondisi pasien                                                                                  |
+| Tinggal dengan                                         | Dipilih sesuai dengan kondisi pasien                                                                                  |
+| Penganiayaan                                           | Dipilih sesuai dengan kondisi pasien                                                                                  |
+  </Tab>
+  
+  <Tab value="Fungsional">
+    <img
+  src="/fungsional_rj.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+| Variable                                               | Cara Pengisian                                                                                                                                                                                                                 |
+| ------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Aktifitas dan mobilitas                                | Dipilih “mandiri” jika pasien tidak perlu bantuan dan dipilih “perlu bantuan,sebutkan” jika pasien membutuhkan bantuan mobilitas, serta diisikan bentuk bantuan yang diperlukan oleh pasien pada tabel isian yang disediakan   |
+| Alat Bantu Jalan, sebutkan                             | Diisi dengan alat bantu jalan yang dibutuhkan pasien                                                                                                                                                                           |
+  </Tab>
+
+  <Tab value="Edukasi">
+  <img
+  src="/edukasi_rj_satu.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+<img
+  src="/edukasi_rj_dua.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+  <img
+  src="/edukasi_rj_tiga.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+| Variable                                                              | Cara Pengisian                                                                       |
+| --------------------------------------------------------------------- | -------------------------------------------------------------------------------------|
+| Apakah anda butuh edukasi                                             | Dipilih sesuai kebutuhan                                                             |
+| Kebutuhan Edukasi / Informasi                                         | Diisi isian sesuai dengan kebutuhan edukasi kepada pasien sesuai kebutuhan           |
+| Assesement kemampuan dan kemampuan belajar                            | Diisi isian sesuai dengan kebutuhan edukasi kepada pasien                            |
+| Formulir pelaksanaan edukasi, informasi dan verifikasi terintegrasi   | Diisi isian sesuai dengan kebutuhan edukasi kepada pasien                            |
+  </Tab>
+
+  <Tab value="Asuhan Keperawatan">
+   <img
+  src="/askep_satu.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+<img
+  src="/askep_dua.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+<img
+  src="/askep_tiga.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  /><img
+  src="/askep_empat.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+<img
+  src="/askep_lima.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+<img
+  src="/askep_enam.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+  <img
+  src="/askep_tujuh.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+  <img
+  src="/askep_delapan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+  <img
+  src="/askep_sembilan.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+
+  <img
+  src="/askep_sepuluh.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+
+  }}
+  />
+ 
+ | Variable                                                              | Cara Pengisian                                                                           |
+| ---------------------------------------------------------------------- | -----------------------------------------------------------------------------------------|
+| Risiko infeksi (D.0142) b.d                                            | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Bersihan jalan nafas tidak efektif (D.0001) b.d                        | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Risiko penurunan curah jantung (D.0011) b.d Perubahan irama jantung    | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Nyeri akut (D.0077) b.d                                                | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Kesiapan peningkatan manajemen kesehatan (D.00112)                     | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Gangguan Persepsi sensori (D.0085)                                     | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Gangguan mobilitas fisik                                               | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Ansietas (D.0080) b.d                                                  | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Kesiapan persalinan                                                    | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Ketidaknyamanan post parfum (D.0075) b.d                               | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Defisit nutrisi (D.0019) b.d                                           | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Distress spiritual (D.0082) b.d                                        | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Koping tidak efektif                                                   | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Gangguan integritas jaringan/kulit (D.0129) b.d                        | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Gangguan tumbuh kembang (D.0106)                                       | Dipilih diagnosis, luaran dan intervensi sesuai kondisi pasien                           |
+| Lain-lain                                                              | Diisi dengan diagnosis, luaran dan intervensi lain yang tidak disebutkan dibagian atas   |
+  </Tab>
+</Tabs>

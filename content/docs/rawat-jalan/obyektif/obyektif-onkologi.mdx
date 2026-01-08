@@ -1,0 +1,82 @@
+---
+title: Obyektif Onkologi
+description: Berikut merupakan tampilan obyektif pada poli onkologi
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs items={['Onkologi', 'Obat Sitostatika', 'Permintaan Obat Khusus', 'Unggah Penunjang']} defaultIndex={1}>
+  <Tab value="Onkologi">
+  <img 
+  src="/onkologi.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------|
+| Pemeriksaan fisik                | Diisi hasil pemeriksaan fisik yang dilakukan pada pasien                                                          |
+| Kepala                           | Tandai Lokasi sakit pasien                                                                                        |
+| Dada                             | Tandai Lokasi sakit pasien                                                                                        |
+| Tampilkan                        | Berisi hasil rekap isian                                                                                          |
+
+  </Tab>
+
+  <Tab value="Obat Sitostatika">
+
+ <img 
+  src="/sitostatika.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                                               | Cara Pengisian                                                                     |
+| ------------------------------------------------------ | -----------------------------------------------------------------------------------|
+| Rencana pemberian obat sotostatika 1 keur              | Diisi rencana pemberian obat sotostatika 1 keur                                    |
+| Dimulai tanggal                                        | Diisi tanggal rencana pemberian obat sotostatika 1 keur                            |
+| Diulang setiap                                         | Diisi berapa hari pemberian obat sotostatika 1 keur dilakukan berulang             |
+| Diagnosa                                               | Diisi diagnosa                                                                     |
+| Rencana pemberian obat                                 | Diisi rencana pemberian obat                                                       |
+  </Tab>
+
+  <Tab value="Permintaan Obat Khusus">
+  <img 
+  src="/obat_khusus.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                                          | Cara Pengisian                                                                                  |
+| ------------------------------------------------- | ------------------------------------------------------------------------------------------------|
+| Status Penderita                                  | Diisi status pasien                                                                             |
+| Diagnosa                                          | Diisi diagnosa pasien                                                                           |
+| Alasan medis                                      | Diisi alasan medis yang melandasi                                                               |
+| Obat khusus dalam DPHO PT. Akses yang diminta     | Diisi obat khusus dalam DPHO PT. Akses yang diminta                                             |
+
+  </Tab>
+  <Tab value="Unggah Penunjang">
+   <Callout title="Information" type="warn">
+  Unggah penunjang sama seperti uraian pada poli penyakit dalam jantung, kandungan, saraf, jiwa **Inpatient**. 
+  Untuk melihat 'unggah penunjang poli jantung', silakan merujuk ke [Obyektif Penyakit Dalam](/docs/rawat-jalan/obyektif/obyektif-penyakit-dalam).
+  </Callout>
+  </Tab>
+  
+</Tabs>

@@ -1,0 +1,200 @@
+---
+title: Obyektif Rehab Medik
+description: Berikut merupakan tampilan obyektif pada poli rehab medik 
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs items={['Layanan Kedokteran Fisik dan Rehabilitasi', 'Assesmen Kedokteran  Fisik dan Rehabilitasi','Hasil Tindakan Uji Fungsi/Prosedur KFR', 'Lembar Tindakan Pasien', 'Pelayanan Fisioterapi', 'Protokol Terapi', 'Lembar Program Terapi', 'Unggah Penunjang' ]} defaultIndex={1}>
+  
+  <Tab value="Layanan Kedokteran Fisik dan Rehabilitasi">
+  
+  <img 
+  src="/layanan_kedokteran_rehab.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+/>
+
+| Variable                         | Cara Pengisian                                                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------|
+| Tanggal pelayanan                | Tanggal pelayanan                                                                                                 |
+| Anamnesa                         | Diisi hasil anamnesa                                                                                              |
+| Pemeriksaan fisik dan uji fungsi | Diisi hasil pemeriksaan fisik dan uji fungsi                                                                      |
+| Diagnosa medis                   | Diagnosa medis                                                                                                    |
+| Diagnosa fungsi                  | Diisi diagnosa fungsi                                                                                             |
+| Diisi diagnosa fungsi            | Diisi tata laksana KFR                                                                                            |
+| Anjuran                          | Diisi anjuran yang diberikan                                                                                      |
+| Evaluasi                         | Diisi evaluasi yang diberikan                                                                                     |
+| Goal                             | Diisi goal                                                                                                        |
+| Suspek penyakit akibat kerja     | Dipilih “ya” jika ada dugaan penyakit akibat kerja dan “tidak” jika tidak ada dugaan penyakit akibat kerja        |
+| Kunjungan awal pasien            | Diisi tanggal kunjungan awal pasien                                                                               |
+| Masa akhir pengobatan            | Diisi tanggal akhir pengobatan pasien                                                                             |
+  </Tab>
+
+  <Tab value="Assesmen Kedokteran  Fisik dan Rehabilitasi">
+  <img 
+  src="/assesmen_kedokteran_rehab.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+/>
+
+| Variable                         | Cara Pengisian                                                                                                                                                                                    |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Alergi                           | Diisi dengan jenis alergi seperti obat, makanan, dll. Apabila tidak ada tulis "tidak ada" atau " - "                                                                                              |
+| Keluhan utama                    | Diisi dengan keluhan yang paling dirasakan pasien saat berkunjung berobat. Contoh : Nyeri pinggang kiri menjalar ke kaki sejak 4 hari lalu                                                        |
+| Riwayat penyakit sekarang        | Diisi dengan detail penjelasan mengenai awal mula, durasi, frekuensi, dan kronologi keluhan utama. Contoh : Nyeri muncul setelah mengangkat beban berat (kecetit), nyeri berkurang saat berbaring |                                   
+| Pemeriksaan fisik                | Diisi dengan hasil pemeriksaan objektif. Contohnya : pemeriksaan tanda vital, NRS/Skala Nyeri, tes spesifik seperti SLR, palpasi otot, dan lain - lain                                            |                                                                                           
+| Kesimpulan                       | Diisi dengan dengan kesimpulan hasil pemeriksaan seperti diagnosis medis atau suspek (dugaan) penyakit berdasarkan hasil pemeriksaan                                                              |                              
+| Rencana uji fungsi               | Diisi dengan tindakan uji fungsi spesifik yang akan dilakukan untuk menilai keterbatasan fisik pasien. Contoh : Uji fungsi jalan, Tes lingkup gerak sendi (LGS) lumbal.                           |                                                                 
+| Pemeriksaan lain                 | Diisi dengan catatan tambahan seperti hasil laboratorium, Rontgen, MRI, atau pemeriksaan penunjang lainny                                                                                         |
+| Program                          | Diisi dengan rencana terapi rehabilitasi medik yang diberikan (seperti fisioterapi, okupasi terapi, dll).                                                                                         |
+  </Tab>
+
+
+  <Tab value="Hasil Tindakan Uji Fungsi/prosedur KFR">
+  <img 
+  src="/tindakan_uji_KFR.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+/>
+
+| Variable                            | Cara Pengisian                                                                                                                                                                                                  |
+| ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| KFR                                 | Diisi dengan nama dokter spesialis Kedokteran Fisik dan Rehabilitasi yang menangani                                                                                                                             |
+| Koding                              | Diisi dengan kode prosedur tindakan sesuai standar ICD-9-CM. Contoh : 93.39 (Other physical therapy)                                                                                                            |
+| Jenis Pemeriksaan                   | Diisi dengan nama tes atau prosedur uji fungsi yang dilakukan. Contoh : Pemeriksaan lingkup gerak sendi / Tes kekuatan otot                                                                                     |                                   
+| Diagnosa fungsional                 | Diisi dengan hambatan fungsi tubuh atau gangguan aktivitas yang dialami pasien. Contoh : Gangguan nyeri                                                                                                         |                                                                                           
+| Diagnosa medis                      | Diisi dengan diagnosis klinis atau penyakit yang mendasari keluhan. Contoh : LBP susp HNP                                                                                                                       |                              
+| Instrumen Uji fungsi /prosedur KFR  | Diisi dengan catatan tambahan seperti hasil laboratorium, Rontgen, MRI, atau pemeriksaan penunjang lainny                                                                                                       |
+| Hasil yang di dapat                 | Diisi dengan temuan klinis detail setelah dilakukan pengujian. Contoh : NRS 3-4 SLR -/- spasme Parathoracolumbal +/++ hiperestesi area plantar pedis S                                                          |
+| Kesimpulan                          | Diisi dengan ringkasan akhir kondisi fungsional pasien setelah pemeriksaan. Contoh : Gangguan nyeri                                                                                                             |
+| Rekomendasi                         | Diisi dengan rencana terapi, penggunaan alat bantu, atau latihan mandiri yang disarankan. Contoh : TENS IF 4000 mid parathoracolumbal dan IRR a/r mid parathoracolumbal, LSO semi rigid, core strength exercise |
+  </Tab>
+
+  <Tab value="Lembar Tindakan Pasien">
+
+    <img 
+  src="/tindakan_rehab.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+/>
+
+
+| Variable                         | Cara Pengisian                                                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------|
+| Filter Tanggal Cetak             | Pilih tanggal cetak lembar tindakan pasien                                                                        |
+| Diagnosa                         | Diisi dengan diagnosa medis terakhir dari asesmen dokter.                                                         |                     
+| Permintaan Terapi                | Diisi dengan Instruksi terapi lengkap atau permintaan terapi                                                      |
+| Tanggal                          | Diisi dengan tanggal pemberian program                                                                            | 
+| Program                          | 
+
+  </Tab>
+
+  <Tab value="Pelayanan Fisioterapi"> 
+  <img 
+  src="/layanan_fisioterapi_rehab.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+/>
+
+| Variable                         | Cara Pengisian                                                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------|
+| Filter Tanggal Cetak             | Pilih tanggal cetak lembar tindakan pasien                                                                        |
+| Tanggal                          | Pilih tanggal dilakukannya tindakan fisioterapi pada pasien                                                       |
+| SOAP (S)                         | Diisi dengan data Subjektif (keluhan pasien saat ini atau riwayat keluhan)                                        |
+| SOAP (O)                         | Diisi dengan data Objektif (hasil pemeriksaan fisik atau temuan klinis saat terapi)                               |
+| Diagnosa                         | Diisi dengan diagnosa medis yang relevan dengan kondisi pasien saat ini                                           |
+| Tindakan                         | Diisi dengan tindakan terapi fisik yang diberikan kepada pasien.                                                  |
+  </Tab>
+
+  <Tab value="Protokol Terapi">
+  <img 
+  src="/protokol_terapi.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0", 
+  }} 
+/>
+
+ <img 
+  src="/protokol_terapi_dua.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0", 
+  }} 
+/>
+
+| Variable                              | Cara Pengisian                                                                                                    |
+| ------------------------------------- | ------------------------------------------------------------------------------------------------------------------|
+| Subjektif                             | Diisi dengan keluhan utama pasien, lokasi nyeri, serta riwayat kejadian yang diceritakan oleh pasien              |                                                                                                                 
+| Objektif                              | Diisi dengan hasil pemeriksaan fisik yang terukur, nilai ambang nyeri, serta tes provokasi yang dilakukan         |
+| Assesmen                              | Diisi dengan penegakan diagnosis fungsional dan diagnosis medis berdasarkan temuan data sebelumnya.               |
+| Goal of treatment                     | Diisi dengan target jangka pendek dan jangka panjang yang ingin dicapai dari terapi ini.                          |
+| Tindakan / program rehabilitasi medik | Diisi dengan rincian modalitas alat, dosis, frekuensi, serta latihan fisik yang akan diberikan.                   |
+| Edukasi                               | Diisi dengan instruksi khusus, saran aktivitas, atau larangan yang harus dipatuhi pasien di rumah                 |
+| Frekuensi kunjungan                   | Diisi dengan jadwal rutin atau jumlah pertemuan terapi yang disarankan dalam satu periode                         |
+| Rencana Tindak Lanjut                 | Diisi dengan langkah medis berikutnya setelah rangkaian terapi selesai dilakukan.                                 |
+
+  </Tab>
+  <Tab value="Lembar Program Terapi">
+   <img 
+  src="/program_terapi.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+/>
+
+| Variable                         | Cara Pengisian                                                                                                    |
+| -------------------------------- | ------------------------------------------------------------------------------------------------------------------|
+| Subjektif                        | Diisi dengan informasi yang disampaikan pasien mengenai kondisi atau keluhan saat ini.                            |
+| Objektif                         | Diisi dengan temuan klinis hasil pemeriksaan fisik atau observasi langsung oleh tenaga medis                      |
+| Assesmen                         | Diisi dengan kesimpulan klinis atau diagnosa fungsional berdasarkan data subjektif dan objektif                   |
+| Prosedur                         | Isi dengan rincian tindakan medis atau program terapi fisik yang akan dijalankan oleh pasien.                     |
+  </Tab>
+
+  <Tab value="Unggah Penunjang">
+  <Callout title="Information" type="warn">
+  Unggah penunjang sama seperti uraian pada poli penyakit dalam jantung, kandungan, saraf, jiwa **Inpatient**. 
+  Untuk melihat 'unggah penunjang poli jantung', silakan merujuk ke [Obyektif Penyakit Dalam](/docs/rawat-jalan/obyektif/obyektif-penyakit-dalam).
+  </Callout>
+  </Tab>
+  
+</Tabs>

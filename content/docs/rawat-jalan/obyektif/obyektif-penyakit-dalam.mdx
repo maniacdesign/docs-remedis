@@ -1,0 +1,48 @@
+---
+title: Obyektif Penyakit Dalam
+description: Berikut merupakan pengisian obyektif pada poli penyakit dalam, jantung, kandungan, saraf, jiwa
+---
+## Poli Penyakit Dalam, Jantung, Kandungan, Saraf, Jiwa
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs items={['Penyakit Dalam', 'Unggah Penunjang']} defaultIndex={1}>
+  <Tab value="Penyakit Dalam">
+  <img
+  src="/obyektif_penyakit_dalam.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+  />
+
+| Variable                         | Cara Pengisian                                                                                                                                             |
+| -------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pemeriksaan fisik                | Diisi dengan hasil pemeriksaan fisik yang dilakukan pasien                                                                                                 |
+| Kode gambar                      | Dipilih sesuai kondisi pasien. Klik pada gambar anatomi sesuai kondisi yang dipilih                                                                        |
+  </Tab>
+
+  <Tab value="Unggah Penunjang">
+  <img
+  src="/obyektif_unggahan_dalam.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+  />
+
+| Variable                              | Cara Pengisian                                                                                                   |
+| ------------------------------------- | -----------------------------------------------------------------------------------------------------------------|
+| Catatan                               | Diisi catatan sesuai kebutuhan                                                                                   |
+| Nama file                             | diisi nama file yang akan diunggah                                                                               |
+| Upload file                           | pilih file yang akan diunggah kemudian klik “upload”                                                             |
+| Hasil pemeriksaan unggah penunjang    | Berisi list file yang telah dilakukan unggah dokumen oleh petugas                                                |
+  </Tab>
+</Tabs>

@@ -1,13 +1,37 @@
 ---
 title: Pasien
-description: Berbagai menu pada group pasien
 ---
 
-## Selanjutnya?
+Menu **Pasien** merupakan modul awal bagi PPA untuk mengisi data perawatan pasien di ruangan. Menu ini berfungsi sebagai navigasi awal untuk memantau pasien yang sedang dirawat (aktif) maupun pasien yang telah menyelesaikan masa perawatan.
 
-<Cards>
-  <Card
-    title="Pasien hari ini"
-    href="http://localhost:3000/docs/pasien/pasien-hari-ini"
-  />
-</Cards>
+Menu ini terbagi menjadi dua kategori (submenu) utama:
+
+## 1. Pasien Hari Ini
+
+Submenu **Pasien Hari Ini** menampilkan daftar _real-time_ pasien yang saat ini berstatus **aktif** atau sedang dirawat di ruangan/unit kerja Anda.
+
+Pada halaman ini, pengguna dapat melihat ringkasan informasi pasien meliputi:
+
+- Nama Pasien & Nomor Rekam Medis (RM).
+- Usia Pasien
+- Dokter Penanggung Jawab Pelayanan (DPJP).
+
+**Fungsi Utama:**
+
+- Halaman ini adalah titik awal untuk melakukan input data medis harian (CPPT, Tanda Vital, Asesmen).
+- Data pasien akan tetap berada di daftar ini selama pasien belum dinyatakan pulang (KRS) atau dipindahkan.
+
+<Callout type="info" title="Informasi Penting">
+  Pastikan untuk memverifikasi identitas pasien sebelum membuka rekam medis
+  elektronik untuk menghindari kesalahan input data medis (Human Error).
+</Callout>
+
+---
+
+## 2. Riwayat (History)
+
+Submenu **Riwayat** berfungsi sebagai arsip data pasien yang telah keluar dari ruangan tersebut. Halaman ini memuat daftar pasien dengan status **KRS (Keluar Rumah Sakit)**.
+
+**Fungsi Utama:**
+
+- **Pencarian Data Lampau:** Memudahkan petugas untuk mencari kembali berkas pasien yang sudah pulang guna keperluan administrasi, klaim, atau audit medis.

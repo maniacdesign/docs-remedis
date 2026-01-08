@@ -2,6 +2,13 @@
   "title": "Rawat Jalan",
   "pages": [
     "index",
-    "ringkasan-pasien"
+    "ringkasan-pasien",
+    "assesmen-kontrol",
+    "subyektif",
+    "obyektif",
+    "assesmen",
+    "perencanaan",
+    "rencana-keluar",
+    "riwayat"
   ]
 }
