@@ -33,16 +33,17 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
   }}
 />
 
-| Variable                         | Cara Pengisian                                                                          |
-| -------------------------------- | --------------------------------------------------------------------------------------- |
-| Waktu Pengisian                  | Pilih tanggal dan jam pengisian formulir                                                |
-| Keluhan Utama                    | Diisikan dengan keluhan utama                                                           |
-| Riwayat penyakit pasien sekarang | Diisikan dengan riwayat pasien saat ini atau kejadian terbaru yang dialami oleh pasien. |
-| Riwayat Penyakit                 | Diisikan dengan riwayat penyakit pasien terdahulu                                       |
-| Alergi                           | Pilih jenis alergi - isi keterangan terkait alergi pasien - klik tambah                 |
-| Pemberian Obat                   | Diisikan dengan nama obat, dosis, dan lama penggunaan - klik tambah                     |
-| Perilaku Berisiko                | Pilih perilaku pasien yang beresiko dengan klik checkbox                                |
-| Perilaku Lain                    | Diisi perilaku lain pasien yang tidak disebutkan diatas                                 |
+| Variable                         | Cara Pengisian                                                                                                                                                                                                                                                               |
+| -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Waktu Pengisian                  | Pilih tanggal dan jam pengisian formulir                                                                                                                                                                                                                                     |
+| Keluhan Utama                    | Diisikan dengan keluhan utama, Contoh : Nyeri dada sebelah kiri sejak 2 jam yang lalu.                                                                                                                                                                                       |
+| Riwayat penyakit pasien sekarang | Diisikan dengan riwayat pasien saat ini atau kejadian terbaru yang dialami oleh pasien, Contoh : Nyeri terasa seperti ditindih beban berat, menjalar ke lengan kiri dan leher. Nyeri muncul mendadak saat beristirahat, durasi >20 menit, disertai keringat dingin dan mual. |
+| Riwayat Penyakit                 | Diisikan dengan riwayat penyakit pasien terdahulu, Contoh : Hipertensi sejak 5 tahun lalu rutin minum Amlodipine. Riwayat rawat inap karena Typus tahun 2022.                                                                                                                |
+| Alergi                           | Pilih jenis alergi - isi keterangan terkait alergi pasien - klik tambah, Contoh : Amoxicillin (Reaksi: Gatal-gatal dan kemerahan pada kulit), Udang (Reaksi: Bibir bengkak).                                                                                                 |
+| Pemberian Obat                   | Diisikan dengan nama obat, dosis, dan lama penggunaan - klik tambah, Contoh : Metformin 500mg (2x1), Candesartan 8mg (1x1).                                                                                                                                                  |
+| Perilaku Berisiko                | Pilih perilaku pasien yang beresiko dengan klik checkbox, dan Ceklis tidak ada jika semua perilaku di atas negatif                                                                                                                                                           |
+| Perilaku Lain                    | Diisi perilaku lain pasien yang tidak disebutkan diatas, Contoh : Kurang aktivitas fisik/Sedentary lifestyle.                                                                                                                                                                |
+
   </Tab>
 
   <Tab value="Pemeriksaan Fisik">
@@ -64,14 +65,15 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | ---------------- | ---------------------------------------------------------------------------------------------------------- |
 | Skala GCS        | Diisikan sesuai dengan tingkat kesadaran pasien berdasarkan respons mata, suara, dan gerak.                |
 | Kesadaran        | Pilih kesadaran pasien yang sesuai dengan kondisi pasien Composmentis/Apatis/Samnolen/Stupor/Coma          |
-| Nadi             | Diisi dengan jumlah denyut nadi pasien dalam satu menit (x/menit)                                          |
-| Tensi            | Diisi dengan hasil tekanan darah (tensi) pasien                                                            |
-| Suhu             | Diisi dengan tingkat suhu pasien yang telah diperiksa                                                      |
-| Respiratory Rate | Diisi dengan jumlah frekuensi napas pasien dalam satu menit                                                |
-| SPO2             | Diisi dengan persentase saturasi oksigen dalam darah                                                       |
-| Tinggi Badan     | Diisi dengan tinggi badan pasien                                                                           |
-| Berat Badan      | Diisi dengan berat badan pasien                                                                            |
+| Nadi             | Diisi dengan jumlah denyut nadi pasien dalam satu menit (x/menit), Contoh : 88/ Menit.                     |
+| Tensi            | Diisi dengan hasil tekanan darah (tensi) pasien, Contoh : 120/80 mmHg                                      |
+| Suhu             | Diisi dengan tingkat suhu pasien yang telah diperiksa, Contoh : 36.5°C                                     |
+| Respiratory Rate | Diisi dengan jumlah frekuensi napas pasien dalam satu menit, Contoh : 20/Menit                             |
+| SPO2             | Diisi dengan persentase saturasi oksigen dalam darah, Contoh : 98%                                         |
+| Tinggi Badan     | Diisi dengan tinggi badan pasien, Contoh : 170 CM                                                          |
+| Berat Badan      | Diisi dengan berat badan pasien, Contoh : 60 Kg.                                                           |
 | Bagian Tubuh     | Pilih bagian tubuh yang terdapat keluhan seperti Kepala/Dada/Abdomen/Tulang Belakang/Genotalia/Ekstremitas |
+
 </Tab>
 
 <Tab value="Pengkajian Nyeri">
@@ -102,19 +104,20 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
   }}
 />
 
-| Variable                   | Cara Pengisian                                                                                                                                |
-| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| Nyeri                      | Pilih tingkat nyeri sesuai kondisi pasien Tidak Nyeri/Sedikit Nyeri/Nyeri Sedikit Mengganggu/Mengganggu Aktivitas/Sangat Mengganggu Aktivitas |
-| Provokativ                 | Diisi dengan faktor penyebab nyeri                                                                                                            |
-| Qualitatif                 | Pilih karakter nyeri Terbakar/Tajam/Tumpul/Lainnya                                                                                            |
-| Regio                      | Diisi dengan lokasi nyeri dan dimana letak penjalaran nyeri                                                                                   |
-| Metode Pengkajian Nyeri    | Pilih jenis metode pengkajian nyeri                                                                                                           |
-| Time                       | Pilih salah satu waktu pola nyeri Terus Menerus/Hilang Timbul                                                                                 |
-| Sejak                      | Diisi dengan sejak kapan nyeri terjadi dan sudah berapa lama                                                                                  |
-| Saat Aktivitas Apa Terjadi | Diisi dengan aktivitas apa yang menyebabkan nyeri timbul                                                                                      |
-| Jenis                      | Pilih salah satu jenis sesuai kondisi pasien                                                                                                  |
-| Penandaan Lokasi Nyeri     | Pilih salah satu lokasi tubuh yang terasa nyeri                                                                                               |
-| Keterangan                 | Diisi dengan keterangan lain                                                                                                                  |
+| Variable                   | Cara Pengisian                                                                                                                                                        |
+| -------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Nyeri                      | Pilih tingkat nyeri sesuai kondisi pasien Tidak Nyeri/Sedikit Nyeri/Nyeri Sedikit Mengganggu/Mengganggu Aktivitas/Sangat Mengganggu Aktivitas                         |
+| Provokativ                 | Diisi dengan faktor penyebab nyeri, Contoh : Nyeri bertambah saat bergerak, berkurang saat istirahat.                                                                 |
+| Qualitatif                 | Pilih karakter nyeri Terbakar/Tajam/Tumpul/Lainnya                                                                                                                    |
+| Regio                      | Diisi dengan lokasi nyeri dan dimana letak penjalaran nyeri, Contoh : Lokasi: Ulu hati. Penjalaran: Ke punggung belakang.                                             |
+| Metode Pengkajian Nyeri    | Pilih jenis metode pengkajian nyeri                                                                                                                                   |
+| Time                       | Pilih salah satu waktu pola nyeri Terus Menerus/Hilang Timbul, Contoh : 2 jam yang lalu atau Sejak kemarin sore (pukul 17.00).                                        |
+| Sejak                      | Diisi dengan sejak kapan nyeri terjadi dan sudah berapa lama, Contoh : 15 menit setiap serangan atau Sudah berlangsung selama 3 hari.                                 |
+| Saat Aktivitas Apa Terjadi | Diisi dengan aktivitas apa yang menyebabkan nyeri timbul, Contoh : Saat sedang menaiki tangga atau Muncul setelah mengonsumsi makanan pedas.                          |
+| Jenis                      | Pilih salah satu jenis sesuai kondisi pasien                                                                                                                          |
+| Penandaan Lokasi Nyeri     | Pilih salah satu lokasi tubuh yang terasa nyeri                                                                                                                       |
+| Keterangan                 | Diisi dengan observasi tambahan, detail kronologi yang belum tercatat, respon pasien terhadap nyeri, atau tindakan mandiri yang sudah dilakukan pasien sebelum ke RS. |
+
 </Tab>
 
 <Tab value="Prosedur Invasif & Resiko Infeksi">
@@ -132,15 +135,16 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
   }}
 />
 
-| Variable         | Cara Pengisian                                                                             |
-| ---------------- | ------------------------------------------------------------------------------------------ |
-| Infus Intravena  | Diisikan dengan lokasi Infus                                                               |
-| Unit Pemasangan  | Diisi dengan unit yang memasangkan infus                                                   |
-| Tanggal          | Diisikan dengan tanggal pemasangan infus                                                   |
-| NGT              | Diisikan dengan Unit pemasangan yang melakukan pemasangan NGT dan tanggal Pemasangan       |
-| Dower Chateter   | Diisikan dengan unit pemasangan chateter dan tanggal pemasangan                            |
-| Prosedur Invasif | Diisikan dengan prosedur lainnya, unit pemasangan, dan pilih tanggal pemasangan            |
-| Resiko Infeksi   | Pilih apakah terdapat resiko infeksi, apabila ada maka tambahkan keterangan resiko infeksi |
+| Variable         | Cara Pengisian                                                                                                                                                |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Infus Intravena  | Diisikan dengan lokasi Infus, Contoh : Tangan Kiri/Tangan Kanan                                                                                               |
+| Unit Pemasangan  | Diisi dengan unit yang memasangkan infus, Contoh IGD atau Ruang Rawat Inap                                                                                    |
+| Tanggal          | Diisikan dengan tanggal pemasangan infus                                                                                                                      |
+| NGT              | Diisikan dengan Unit pemasangan yang melakukan pemasangan NGT dan tanggal Pemasangan Contoh : ICU                                                             |
+| Dower Chateter   | Diisikan dengan unit pemasangan chateter dan tanggal pemasangan, Contoh : Kamar Operasi (OK)                                                                  |
+| Prosedur Invasif | Diisikan dengan prosedur lainnya, unit pemasangan, dan pilih tanggal pemasangan, Contoh : Pemasangan Drain Abdomen, di Kamar Operasi (OK)                     |
+| Resiko Infeksi   | Pilih apakah terdapat resiko infeksi, apabila ada maka tambahkan keterangan resiko infeksi, Contoh : Area insersi infus tampak kemerahan (dolor) dan bengkak. |
+
 </Tab>
 
 <Tab value="Kondisi Sosial & Psikologi">
@@ -166,6 +170,7 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Masalah terkait biaya di RS                               | Pilih jenis pembayaran yang digunakan pasien Ditanggung (BPJS,Asuransi)/Umum |
 | Kegiatan Menjalankan Ibadah                               | Pilih salah satu apakah pasien aktif menjalankan ibadah atau tidak           |
 | Pola keyakinan dan Nilai-nilai pribadi pasien yang dianut | Pilih sesuai keyakinan dan nilai - nilai pribadi pasien                      |
+
 </Tab>
 
 <Tab value="Assesmen Kebutuhan Fungsional">
@@ -189,12 +194,13 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
 | Mandi (bathing)           | Pilih apakah pasien dapat melakukan mandi sendiri (Mampu/Butuh Bantuan/Mandiri)                               |
 | Perawatan Diri (grooming) | Pilih apakah kondisi pasien dapat melakukan perawatan diri (Membutuhkan bantuan orang lain/Mandiri)           |
 | Berpakaian (dressing)     | Pilih apakah kondisi pasien dapat mengenakan pakaian sendiri (Tergantung orang lain/Sebagian Dibantu/Mandiri) |
-| Buang air kecil (bladder) | Pilih salah satu sesuai kondisi pasien                                                        |
-| Buang air besar (bowel)   | Pilih salah satu sesuai kondisi pasien
-| Penggunaan Toilet         | Pilih sesuai kondisi pasien dalam penggunaan toilet
-| Transfer                  | Pilih sesuai kondisi pasien untuk transfer
-| Mobilitas                 | Pilih mobilitas sesuai kondisi pasien 
-| Naik turun tangga         | Pilih kemampuan pasien untuk naik turun tangga
+| Buang air kecil (bladder) | Pilih salah satu sesuai kondisi pasien                                                                        |
+| Buang air besar (bowel)   | Pilih salah satu sesuai kondisi pasien                                                                        |
+| Penggunaan Toilet         | Pilih sesuai kondisi pasien dalam penggunaan toilet                                                           |
+| Transfer                  | Pilih sesuai kondisi pasien untuk transfer                                                                    |
+| Mobilitas                 | Pilih mobilitas sesuai kondisi pasien                                                                         |
+| Naik turun tangga         | Pilih kemampuan pasien untuk naik turun tangga                                                                |
+
 </Tab>
 
   <Tab value="Pengkajian Lainnya">
@@ -210,10 +216,10 @@ import { Tab, Tabs } from "fumadocs-ui/components/tabs";
     border: "2px solid blue",
   }}
 />
-| Variable                  | Cara Pengisian                                                                                                |
-| ------------------------- | ------------------------------------------------------------------------------------------------------------- |
-| Pemeriksaan Penunjang     | Diisi sesuai pemeriksaan penunjang yang perlu dilakukan oleh pasien                                           |
-| kajian lainnya            | Diisi sesuai kajian pemerikasaan lainnya                                                                      |
+| Variable                  | Cara Pengisian                                                                                                                                                                                                                |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pemeriksaan Penunjang     | Diisi sesuai pemeriksaan penunjang yang perlu dilakukan oleh pasien, Contoh : Laboratorium: Hb 10.2, Leukosit 15.000. Radiologi: Foto Thorax menunjukkan Infiltrat pada paru kanan.                                           |
+| kajian lainnya            | Diisi sesuai kajian pemerikasaan lainnya, Contoh : Pasien memiliki riwayat pengobatan herbal selama 2 minggu sebelum masuk RS. Ada hambatan komunikasi (Bahasa Daerah).                                                                      |
 
   </Tab>
 </Tabs>

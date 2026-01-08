@@ -9,11 +9,15 @@
     "gizi",
     "kajian-awal-farmasi",
     "perawatan-pasien",
+<<<<<<< HEAD
     "nicu",
     "cara-keluar",
     "komunikasi-antar-unit",
     "---",
     "rawat-jalan"
+=======
+    "cara-keluar"
+>>>>>>> ee0ba6c1f7c09328a4a70b3341e32fdad22951b3
   ],
   "defaultOpen": true
 }
