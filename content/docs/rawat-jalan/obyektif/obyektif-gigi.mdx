@@ -1,0 +1,47 @@
+---
+title: Obyektif Poli Gigi
+description: Berikut merupakan tampilan obyektif pada poli gigi
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Gigi & Mulut', 'Unggah Penunjang']}>
+  <Tab value="Gigi & Mulut">
+  <img 
+  src="/pengkajian_gigi.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+<img 
+  src="/anatomi_mulut.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                                          | Cara Pengisian                                                                                                                                                             |
+| ------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Pemeriksaan Fisik                                 | Diisi dengan hasil temuan umum pada pemeriksaan fisik pasien secara menyeluruh. Contoh : Gigi 36 Karies mencapai pulpa (lubang dalam), Gigi 11 dan 21 Fraktur 1/3 insisal  |                                                                      
+| Gambar anatomi gigi                               | Pilih kondisi gigi pasien dan Berikan tanda pada gambar anatomi gigi untuk menandai area yang bermasalah.                                                                  |
+| Gambar anatomi mulut                              | Berikan tanda lingkaran pada gambar dengan klik "Coretan Tablet" untuk menandai area yang bermasalah.                                                                      |
+  </Tab>
+
+  <Tab value="Unggah Penunjang">
+  <Callout title="Information" type="warn">
+  Unggah penunjang sama seperti uraian pada poli penyakit dalam jantung, kandungan, saraf, jiwa **Inpatient**. 
+  Untuk melihat 'unggah penunjang poli jantung', silakan merujuk ke [Obyektif Penyakit Dalam](/docs/rawat-jalan/obyektif/obyektif-penyakit-dalam).
+  </Callout>
+  </Tab>
+</Tabs>

@@ -1,0 +1,74 @@
+---
+title: Assesmen
+description: Berikut merupakan pengisian assesmen
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Diagnosa ICD-X', 'Tindakan', 'Diagnosa Kerja']}>
+  <Tab value="Diagnosa ICD-X">
+  <img 
+  src="/assesmen_diagnosa.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                                     |
+| -------------------------------- | -------------------------------------------------------------------|
+| Kode ICD-X   (diagnosis awal)    | Diisi kode ICD-X                                                   |
+| Kasus (diagnosis awal)           | Diisi jenis kasus lama atau baru                                   |
+| Catatan (diagnosis awal)         | Diisi catatan lain terkait diagnosa                                |
+| Kode ICD-X  (diagnosis primer)   | Diisi kode ICD-X                                                   |
+| Kasus (diagnosis primer)         | Diisi jenis kasus lama atau baru                                   |
+| Catatan (diagnosis primer)       | Diisi catatan lain terkait diagnosa                                |
+| Kode ICD-X  (diagnosis sekunder) | Diisi kode ICD-X                                                   |
+| Kasus (diagnosis sekunder)       | Diisi jenis kasus lama atau baru                                   |
+| Catatan (diagnosis sekunder)     | Diisi catatan lain terkait diagnosa                                |
+  </Tab>
+
+  <Tab value="Tindakan">
+  <img 
+  src="/tindakan.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                                                             |
+| -------------------------------- | ------------------------------------------------------------------------------------------ |
+| Cari kode tindakan               | Diisi kode tindakan sesuai yang dilakukan                                                  |
+| Catatan                          | Diisi catatan lain yang berkaitan dengan kondisi pasien                                    |
+| Tombol “Reset”                   | Di klik jika ada kesalahan dalam penginputan kode dan ingin mengisi ulang kode tindakan    |
+  </Tab>
+
+  <Tab value="Diagnosa Kerja">
+  <img 
+  src="/diagnosa_kerja.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0 auto", 
+    marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+    border: "2px solid gray" 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                            |
+| -------------------------------- | --------------------------------------------------------- |
+| Diagnosa Kerja                   | Diisi diagnosa kerja                                      |
+| Diagnosa Banding                 | Diisi diagnosa pembanding                                 |
+
+  </Tab>
+</Tabs>
+

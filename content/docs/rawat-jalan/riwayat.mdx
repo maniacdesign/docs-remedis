@@ -1,0 +1,107 @@
+---
+title: Riwayat
+description: Berikut merupakan tampilan riwayat pasien
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Riwayat Pasien', 'Riwayat Obat', 'Riwayat Laboratorium', 'Riwayat Radiologi', 'Riwayat PA']}>
+  <Tab value="Riwayat Pasien">
+  <img 
+     src="/riwayat_pasien_rajal.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    /> 
+
+    | Variable                         | Cara Pengisian                                                                                    |
+    | -------------------------------- | ------------------------------------------------------------------------------------------------- |
+    | button (+)                       | Button ini digunakan untuk melihat dokumen riwayat pasien                                         |
+    | Tampilan riwayat                 | Menu ini digunakan untuk melihat riwayat perawatan pasien                                         |
+  </Tab>
+
+  <Tab value="Riwayat Obat">
+    <img 
+     src="/riwayat_obat.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    /> 
+
+    | Variable                         | Cara Pengisian                                                                                    |
+    | -------------------------------- | ------------------------------------------------------------------------------------------------- |
+    | Tampilan riwayat obat            | Menu ini digunakan untuk melihat riwayat pemberian obat pasien                                    |
+    | Fitur see                        | digunakan untuk melihat riwayat obat pasien lebih detail                                          |
+  </Tab>
+
+  <Tab value="Riwayat Laboratorium">
+   <img 
+     src="/riwayat_laboratorium.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    /> 
+
+    | Variable                         | Cara Pengisian                                                                                    |
+    | -------------------------------- | ------------------------------------------------------------------------------------------------- |
+    | Tampilan riwayat laboratorium    | Menu ini digunakan untuk melihat riwayat laboratorium pasien                                      |
+    | Fitur see                        | Fitur digunakan untuk melihat riwayat laboratorium pasien lebih detail                            |
+    | Fitur cetak                      | Fitur ini digunakan untuk mencetak riwayat laboratorium pasien jika diperlukan                    |
+  </Tab>
+
+
+  <Tab value="Riwayat Radiologi">
+  <img 
+     src="/riwayat_radiologi.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    /> 
+
+    | Variable                         | Cara Pengisian                                                                  |
+    | -------------------------------- | ------------------------------------------------------------------------------- |
+    | Tampilan riwayat radiologi       | Menu ini digunakan untuk melihat riwayat laboratorium pasien                    |
+    | Fitur see                        | Fitur digunakan untuk melihat pratinjau order                                   |
+    | Fitur Hasil                      | Fitur ini digunakan untuk melihat hasil radiologi                               |
+    | Fitur cetak                      | Fitur ini digunakan untuk mencetak riwayat laboratorium pasien jika diperlukan  |
+  
+
+  </Tab>
+  <Tab value="Riwayat PA">
+   <img 
+     src="/riwayat_pa.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    /> 
+    | Variable                         | Cara Pengisian                                                                                    |
+    | -------------------------------- | ------------------------------------------------------------------------------------------------- |
+    | Riwayat Radiologi                | Menu ini digunakan untuk melihat riwayat pemeriksaan PA pasien                                    |
+    
+  </Tab>
+</Tabs>

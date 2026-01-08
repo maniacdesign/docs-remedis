@@ -1,0 +1,92 @@
+---
+title: Obyektif Mata
+description: Berikut merupakan tampilan obyektif pada Poli Mata
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Mata', 'Kacamata', 'Unggah Penunjang']}>
+  <Tab value="Mata">
+  <img 
+  src="/pemeriksaan_mata.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0", 
+  }} 
+  />
+  <img 
+  src="/pengisian_mata.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0", 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                                                                                                                                                     |
+| -------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pemeriksaan Fisik                | Diisi dengan hasil temuan umum pada pemeriksaan fisik pasien secara menyeluruh. Contoh : Kesadaran: Compos Mentis, pasien tampak menahan nyeri pada area orbital.                  |
+| Gambar Anatomi Mata              | Pilih kondisi gigi pasien dan Berikan tanda pada gambar anatomi gigi untuk menandai area yang bermasalah.                                                                          |
+| Visus                            | Diisi dengan ketajaman penglihatan untuk mata kanan dan kiri. Contoh : Kanan: 6/6, Kiri: 6/12                                                                                      |
+| Bola Mata                        | Diisi catat posisi (simetris/tidak) dan pergerakan otot bola mata. Contoh : Gerak bola mata bebas ke segala arah, posisi ortoforia                                                 |
+| Palbera                          | Pilih kondisi kelopak mata pada menu dropdown. misal: normal, ptosis, atau bengkak                                                                                                 |
+| Conj. Tats & Bulb                | Periksa adanya kemerahan (injeksi) atau pucat pada konjungtiva. Contoh : Kanan: Tenang, Kiri: Injeksi siliar (+).                                                                  |
+| Limcorn (Limbus Kornea)          | Diisi dengan catatan kondisi batas antara kornea dan sklera. Contoh : Kanan/Kiri: Jernih, tidak ada neovaskularisasi.                                                              |
+| Kornea                           | Pilih kejernihan atau adanya defek (erosi/infiltrat). Contoh : Kanan: Jernih, Kiri: Infiltrat numular (+).                                                                         |
+| CO Ant (Kamera Okuli Anterior)   | Pilih kondisi CO Ant sesuai kondisi pasien untuk evaluasi kedalaman dan kejernihan bilik mata depan.                                                                               |
+| Pupil                            | Pilih kondisi pupil sesuai kondisi penglihatan pasien.                                                                                                                             |
+| Iris                             | Pilih kondisi iris sesuai kondisi penglihatan pasien.                                                                                                                              |
+| Lensa                            | Pilih kondisi lensa sesuai kondisi penglihatan pasien.                                                                                                                             |
+| Corp Vit (Corpus Vitreum)        | Diisi dengan catatan ada tidaknya kekeruhan pada badan kaca.                                                                                                                       |
+| Correctio                        | Masukkan ukuran lensa kacamata jika dilakukan koreksi. Contoh : Kanan: S -1.50, Kiri: S -1.25 C -0.50 x 90.                                                                        |
+| Tensio Okuli                     | Masukkan angka tekanan bola mata (mmHg) hasil tonometri. Contoh : Kanan: 15 mmHg, Kiri: 21 mmHg.                                                                                   |
+| Sensuscoloris                    | Catat hasil tes buta warna (Ishihara). Kanan/Kiri: Normal (12/12 plate).                                                                                                           |
+| Canalislacrim                    | Periksa saluran air mata (adanya sumbatan atau tidak). Kanan/Kiri: Uji Anel (+), tidak ada epifora.                                                                                |
+
+  </Tab>
+
+  <Tab value="Kacamata">
+   <img 
+  src="/kacamata.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0", 
+  }} 
+  />
+   <img 
+  src="/kacamata_dua.png" 
+  alt="Contoh tampilan form pengkajian awal medis" 
+  width="750" 
+  style={{ 
+    display: "block", 
+    margin: "0", 
+  }} 
+  />
+
+| Variable                         | Cara Pengisian                                                                                                                                                                     |
+| -------------------------------- | -----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Tanggal Pemeriksaan              | Pilih tanggal dilakukannya pemeriksaan tajam penglihatan (refraksi).                                                                                                               |
+| Kacamata                         | Pilih jenis kacamata yang dibutuhkan dengan mencentang salah satu atau kedua opsi.                                                                                                 |
+| Spher (Spherical)                | Masukkan kekuatan lensa untuk mengoreksi rabun jauh (minus) atau rabun dekat (plus). Contoh : Kanan: -2.50, Kiri: -2.25                                                            |
+| Cly (Cylinder)                   | Masukkan nilai koreksi untuk astigmatisme (silinder), jika ada.  Contoh : Kanan: -0.50, Kiri: (dikosongkan jika tidak ada)                                                         |
+| Axis                             | Tentukan arah derajat kelengkungan silinder (wajib diisi jika ada nilai Cylinder). Contoh : Kanan: 90, Kiri: (dikosongkan jika tidak ada)                                          |
+| Add (Addition)                   | Masukkan nilai kekuatan lensa tambahan untuk baca dekat (biasanya pada pasien presbiopia). Contoh : Add Kanan: +2.00, Add Kiri: +2.00                                              |
+| Keterangan                       | Tambahkan catatan khusus seperti nilai Pupillary Distance (PD) atau jenis lensa yang disarankan. Contoh : PD: 62mm, Lensa Photochromic.                                            |
+| Jarak Antar Kedua Pupil          | Diisi dengan hasil pengukuran jarak antara pusat pupil mata kanan dan kiri dalam milimeter (mm). Contoh : 64 mm                                                                    |
+| Pro                              | Tuliskan jenis lensa atau merk lensa yang disarankan kepada pasien. Contoh : Pro: Lensa Progresif (Essilor/Hoya)                                                                   |
+| Umur                             | Isi dengan usia pasien saat pemeriksaan untuk membantu menentukan nilai Addition (Add).                                                                                            |
+  
+  </Tab>
+
+  <Tab value="Unggah Penunjang">
+  <Callout title="Information" type="warn">
+  Unggah penunjang sama seperti uraian pada poli penyakit dalam jantung, kandungan, saraf, jiwa **Inpatient**. 
+  Untuk melihat 'unggah penunjang poli jantung', silakan merujuk ke [Obyektif Penyakit Dalam](/docs/rawat-jalan/obyektif/obyektif-penyakit-dalam).
+  </Callout>
+  </Tab>
+</Tabs>

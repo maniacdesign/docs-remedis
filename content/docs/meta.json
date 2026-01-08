@@ -10,7 +10,10 @@
     "kajian-awal-farmasi",
     "perawatan-pasien",
     "nicu",
-    "cara-keluar"
+    "cara-keluar",
+    "komunikasi-antar-unit",
+    "---",
+    "rawat-jalan"
   ],
   "defaultOpen": true
 }

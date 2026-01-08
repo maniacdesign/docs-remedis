@@ -1,0 +1,64 @@
+---
+title: Komunikasi Antar Unit
+description: Penjelasan mengenai prosedur komunikasi antar unit medis
+---
+
+  <img
+  src="/komunikasi_antar_unit_satu.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                                                                        |
+| -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------|
+| Tanggal Terima                   | Pilih tanggal dan jam pasien diterima di unit tujuan. Harus sesuai waktu real.                                                        |
+| Dari Ruang                       | Diisi dengan  ruang pasien berasal (misal: IGD, Ruang Mawar, Kulit & Kelamin).                                                        |
+| Informasi Kesadaran/Orientasi    | Berisi informasi kesadaran atau orientasi pasien yang terisi secara otomatis dari pemeriksaan fisik atau CPPT sebelumnya              |
+| Informasi Tanda - tanda vital    | Berisi informasi hasil pemeriksaan tanda - tanda vital pasien yang terisi secara otomatis dari pemeriksaan fisik atau CPPT sebelumnya |
+| Informasi Pemeriksaan Fisik      | Berisi informasi pemeriksaan fisik pasien yang terisi secara otomatis dari pemeriksaan fisik atau CPPT sebelumnya                     |  
+
+
+<img
+  src="/komunikasi_antar_unit_dua.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginTop: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                            |
+| -------------------------------- | --------------------------------------------------------------------------|
+| Tindakan yang sudah dilakukan    | Tabel yang berisi informasi riwayat tindakan yang pernah dilakukan        |
+
+
+<img
+  src="/komunikasi_antar_unit_tiga.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginTop: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                                                                                                                                                                 |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Pemeriksaan Penunjang            | Diisi “-” jika tidak ada. Jika ada → tulis singkat jenis penunjang (contoh: Rontgen thorax, EKG).                                                                                                                              |
+| Persyaratan Klaim                | Pilih salah satu: Lengkap atau Belum, Sebutkan. Jika Belum, sistem membuka kolom Keadaan Persyaratan Klaim Belum untuk dijelaskan (misal: “resume belum dibuat”)                                                               |
+| Mobilitas/resiko Jatuh           | Pilih: Tidak Ada, Ringan, atau Tinggi. Jika “Ringan” atau “Tinggi”, sistem membuka kolom tambahan untuk dijelaskan                                                                                                             |
+| Informasi Lain                   | Diisi informasi penting yang belum tercantum pada formulir komunikasi antar unit yang perlu diketahui ruang penerima. Contoh : Pasien telah terpasang infus RL 20 tpm di tangan kiri, serta memiliki alergi obat amoksisilin.  |  
+| Pengkajian Kondisi terkini       | Isi kondisi terakhir pasien saat tiba di ruang penerima. Contoh: sesak, gelisah, lemah, nyeri.                                                                                                                                 | 
+| Diagnosa                         | Isi diagnosa keperawatan awal atau impresi klinis penerima. Contoh: resiko syok, gangguan perfusi, distress napas.                                                                                                             |
+| Yang perlu ditindaklanjut        | Isi rencana lanjutan setelah diterima. Contoh: anamnesa keluhan px, obs TTV per jam, lapor DPJP                                                                                                                                |

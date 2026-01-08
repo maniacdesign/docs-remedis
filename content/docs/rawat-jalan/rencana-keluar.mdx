@@ -1,0 +1,49 @@
+---
+title: Rencana Keluar 
+description: Berikut merupakan tampilan rencana keluar pasien 
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Cara Keluar', 'Cetak Dokumen']}>
+  <Tab value="cara keluar">
+  <img 
+     src="/rencana_keluar.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    /> 
+
+    | Variable                         | Cara Pengisian                                                                                    |
+    | -------------------------------- | ------------------------------------------------------------------------------------------------- |
+    | Kondisi pulang pasien            | Diisi sesuai kondisi saat pasien selesai pelayanan                                                |
+    | Jenis                            | Diisi jenis surat kontrol yang akan di keluarkan                                                  |
+    | No. SEP                          | Diisi no.SEP pasien                                                                               |
+    | Tanggal rencana kontrol          | Diisi dengan tanggal rencana kontrol pasien                                                       |
+    | Spesialis                        | Dipilih poliklinik sesuai kebutuhan pasien                                                        |
+    | DPJP                             | Dipilih nama dokter sesuai dengan kebutuhan pasien                                                |
+  </Tab>
+
+  <Tab value="cetak dokumen">
+   <img 
+     src="/cetak_dokumen.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    /> 
+
+    | Variable                         | Cara Pengisian                                          |
+    | -------------------------------- | ------------------------------------------------------- |
+    | Button Cetak                     | Pilih dokumen yang akan di cetak - klik ikon cetak      |
+
+  </Tab>
+</Tabs>

@@ -1,0 +1,233 @@
+---
+title: Perencanaan 
+description: Berikut merupakan pengisian Perencanaan
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Resep', 'Laboratorium', 'Radiologi', 'Planning', 'Konsul', 'Rujukan Internal', 'Patologi Anatomi' ]}>
+  <Tab value="Resep">
+   ### Cara Pengisian Resep
+   <Tabs groupId="language" items={['Obat Jadi', 'Racikan', 'Template']}>
+   <Tab value="Obat Jadi">
+    <img 
+    src="/obat_jadi.png" 
+    alt="Contoh tampilan form pengkajian awal medis" 
+    width="750" 
+    style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    />
+
+    | Variable                         | Cara Pengisian                                                                                                                                       |
+    | -------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Catatan                          | Diisi jika ada terdapat catatan tambahan atau keterangan terkait penggunaan obat jadi (opsional). Contoh : Diberikan untuk stok 1 bulan              |     
+    | Cari Obat                        | Inputkan nama obat yang ingin dicari pada Tablet                                                                                                     |
+    | Input Obat Jadi                  | Klik fitur (+) untuk menambahkan obat. Kemudian inputkan nama obat, jumlah obat, signa(instruksi pemakaian obat), dan catatan/batasan penggunaan obat|
+   </Tab>
+
+   <Tab value="Racikan">
+    <img 
+    src="/racikan.png" 
+    alt="Contoh tampilan form pengkajian awal medis" 
+    width="750" 
+    style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    />
+
+    | Variable                         | Cara Pengisian                                                                                                                                        |
+    | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Catatan                          | Diisi jika ada terdapat catatan tambahan atau keterangan terkait penggunaan obat jadi (opsional). Contoh : Diberikan untuk stok 1 bulan               |     
+    | Pilihan DTD / NON DTD            | Pilih DTD jika dosis obat yang ditulis adalah untuk satu bungkus/kapsul. Pilih NON DTD jika dosis yang ditulis adalah total keseluruhan bahan racikan |
+    | Nama Racik                       | Pilih atau ketik nama identitas dari campuran obat tersebut.                                                                                          |
+    | Cara Racik                       | Pilih metode pembuatan obat racikan tersebut dari menu dropdown                                                                                       |
+    | Pilih Signa                      | Pilih aturan pakai obat yang sesuai untuk racikan tersebut.                                                                                           |
+    | Jumlah Racik                     | Masukkan angka jumlah total bungkus/kapsul/unit yang akan dibuat.                                                                                     |
+    | Nama Obat                        | Pilih bahan aktif atau obat jadi yang akan dicampur ke dalam racikan.                                                                                 |
+    | Dosis                            | Masukkan kekuatan dosis obat yang digunakan per unit (jika DTD) atau total (jika NON DTD).                                                            |
+   </Tab>
+
+   <Tab value="Template">
+   <img 
+    src="/template.png" 
+    alt="Contoh tampilan form pengkajian awal medis" 
+    width="750" 
+    style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    />
+
+    | Variable                         | Cara Pengisian                                                                                                                                        |
+    | -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Catatan                          | Diisi jika ada terdapat catatan tambahan atau keterangan terkait penggunaan obat jadi (opsional). Contoh : Diberikan untuk stok 1 bulan               |     
+    | Cari Obat                        | Inputkan nama obat yang ingin dicari pada Tablet                                                                                                      |
+    | Input template                   | Klik fitur (+) untuk menambahkan template obat (digunakan untuk mempercepat proses peresepan pada kasus-kasus medis yang sering ditemu)               |                                     
+    </Tab>
+   </Tabs>
+  </Tab>
+ 
+  <Tab value="Laboratorium">
+  ### Tampilan Laboratorium
+        <img 
+        src="/laboratorium.png" 
+        alt="Contoh tampilan form pengkajian awal medis" 
+        width="750" 
+        style={{ 
+            display: "block", 
+            margin: "0 auto", 
+            marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+            border: "2px solid gray" 
+        }} 
+        /> 
+  ### Tampilan Menu Order
+        <img 
+        src="/order_lab.png" 
+        alt="Contoh tampilan form pengkajian awal medis" 
+        width="750" 
+        style={{ 
+            display: "block", 
+            margin: "0 auto", 
+            marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+            border: "2px solid gray" 
+        }} 
+        /> 
+
+    | Variable                         | Cara Pengisian                                                                                                                                           |
+    | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Buat order                       | Klik buat order untuk membuat order tindakan laboratorium baru  isikan sesuai kebutuhan order laboratorium pasien  klik kirim untuk mengirim order Lab |
+    | Lihat                            | Untuk melihat pratinjau order                                                                                                                            |
+    | Cetak                            | Untuk mencetak hasil laboratorium                                                                                                                        |
+  </Tab>
+
+  <Tab value="Radiologi">
+  ### Tampilan Radiologi
+    <img 
+     src="/order_lab.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    /> 
+  
+  ### Menu Order
+    <img 
+     src="/order_radiologi.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    />
+
+    | Variable                         | Cara Pengisian                                                                                                                                           |
+    | -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------- |
+    | Buat order                       | Klik buat order untuk membuat order tindakan radiologi baru - isikan sesuai kebutuhan order radiologi pasien - klik kirim untuk mengirim order Radiologi |
+    | Lihat                            | Untuk melihat pratinjau order                                                                                                                            |
+    | Hasil                            | Untuk melihat hasil radiologi                                                                                                                            |
+    | Cetak                            | Untuk mencetak hasil radiologi                                                                                                                           |
+  </Tab>
+
+  <Tab value="Planning">
+    <img 
+     src="/planning_resep.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    />
+
+    | Variable                         | Cara Pengisian                                                                       |
+    | -------------------------------- | ------------------------------------------------------------------------------------ |
+    | Kolom Catatan                    | Diisi perencanaan yang akan diberikan kepada pasien                                  |                                
+  </Tab>
+
+  <Tab value="Konsul">
+    <img 
+     src="/planning_resep.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    />
+
+    | Variable                         | Cara Pengisian                                                                       |
+    | -------------------------------- | ------------------------------------------------------------------------------------ |
+    | No. RM                           | Diisi No.RM pasien (terisi otomatis)                                                 |
+    | Unit                             | Pilih unit tujuan konsul                                                             |
+    | Dokter                           | Pilih dokter yang dimintai konsul                                                    |
+    | Pertanyaan                       | Pilih dokter yang dimintai konsul                                                    |
+    | Jawaban                          | Diisi jawaban konsul                                                                 |
+    | Ikon baru                        | Di klik jika akan membuat konsul baru                                                |
+    | History                          | Di klik jika ingin melihat histori konsul                                            |
+  </Tab>
+  
+  <Tab value="Rujukan Internal">
+   <img 
+     src="/rujukan_internal.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    />
+
+    | Variable                         | Cara Pengisian                                     |
+    | -------------------------------- | -------------------------------------------------- |
+    | No. RM                           | Diisi No.RM pasien (terisi otomatis)               |
+    | Unit                             | Pilih unit tujuan konsul                           |
+    | Dokter                           | Pilih dokter yang dimintai konsul                  |
+    | Indikasi Rujukan                 | Diisi list konsultasi yang diajukan                |
+    | Ikon baru                        | Di klik jika akan membuat konsul baru              |
+    | History                          | Di klik jika ingin melihat histori konsul          |
+  </Tab>
+
+  <Tab value="Patologi Anatomi">
+    <img 
+     src="/patologi_anatomi.png" 
+     alt="Contoh tampilan form pengkajian awal medis" 
+     width="750" 
+     style={{ 
+        display: "block", 
+        margin: "0 auto", 
+        marginBottom: "20px", // Pastikan huruf 'O', bukan 'U'
+        border: "2px solid gray" 
+    }} 
+    />
+
+    | Variable                         | Cara Pengisian                                             |
+    | -------------------------------- | ---------------------------------------------------------- |
+    | No order                         | Terisi otomatis                                            |
+    | Pilihan “cito”                   | Jika pemeriksaan PA “cito”                                 |
+    | Catatan Klinis                   | Diisi catatan klinis sesuai kondisi pasien                 |
+    | Pemeriksaan PA                   | Dipilih sesuai dengan jenis pemeriksaan yang dibutuhkan    |
+  </Tab>
+</Tabs>
+
