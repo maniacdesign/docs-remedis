@@ -1,0 +1,144 @@
+---
+title: Triase IGD
+description: Berikut merupakan tampilan triase pada ERM Instalasi Gawat Darurat (IGD)
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Data Pasien', 'Pra Assesmen']}>
+  <Tab value="Data Pasien">
+  <img
+  src="/triase.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0",
+  }}
+/>
+
+<img
+  src="/triase_dua.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    marginTop: "0px" /* Ini yang membuat gambar rata tengah */,
+    marginBottom: "0px",
+  }}
+/>
+
+<img
+  src="/triase_tiga.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    marginTop: "0px" /* Ini yang membuat gambar rata tengah */,
+    marginBottom: "0px",
+  }}
+/>
+
+| Variable                         | Cara Pengisian                                                                                                                                                                                                                                              |
+| -------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Cari pasien                      | Pilih cara pencarian pasien, kemudian masukkan data pasien sesuai cara pencarian yang telah dipilih. Contoh : NIK, No. RM, Nama Pasien, Alamat Pasien                                                                                                       | 
+| No medical record                | Nomor medical record akan terisi secara otomatis berdasarkan data pasien yang dipilih pada menu pencarian.                                                                                                                                                  |
+| Nama                             | Nama pasien akan terisi secara otomatis berdasarkan data pasien yang dipilih pada menu pencarian.                                                                                                                                                           |
+| Alamat                           | alamat pasien akan terisi secara otomatis berdasarkan data pasien yang dipilih pada menu pencarian.                                                                                                                                                         |
+| No. Telepon                      | Diisi dengan nomor HP aktif pasien atau wali yang bisa dihubungi dalam keadaan darurat.                                                                                                                                                                     |
+| Jenis Kelamin                    | Pilih jenis kelamin pasien                                                                                                                                                                                                                                  |
+| Tanggal Lahir                    | Diisi dengan tanggal lahir pasien sesuai yang tertera pada kartu identitas diri pasien                                                                                                                                                                      |
+| Tanggal Kedatangan               | Diisi tanggal kedatangan pasien ke IGD                                                                                                                                                                                                                      |
+| Penjamin                         | Pilih jenis penjamin pasien BPJS/UMUM                                                                                                                                                                                                                       |    
+| Cara datang                      | Pilih cara kedatangan pasien seperti Datang Sendiri/ Rujukan/ RS / Puskesmas / Dokter Keluarga atau Praktek / Bidan. Apabila pilihan cara kedatangan pasien tidak tersedia pada daftar, petugas dapat menginputkan secara manual pada kolom yang disediakan |
+| Obat yang dibawa                 | Input obat yang dibawa pasien                                                                                                                                                                                                                               |
+  </Tab>
+
+<Tab value="Pra Assesmen">
+<img
+  src="/pra_assesmen_satu.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0",
+  }}
+/>
+
+<img
+  src="/pra_assesmen_dua.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    marginTop: "0px" /* Ini yang membuat gambar rata tengah */,
+    marginBottom: "0px",
+  }}
+/>
+
+<img
+  src="/pra_assesmen_tiga.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    marginTop: "0px" /* Ini yang membuat gambar rata tengah */,
+    marginBottom: "0px",
+  }}
+/>
+
+<img
+  src="/pra_assesmen_empat.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    marginTop: "0px" /* Ini yang membuat gambar rata tengah */,
+    marginBottom: "0px",
+  }}
+/>
+
+<img
+  src="/pra_assesmen_lima.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    marginTop: "0px" /* Ini yang membuat gambar rata tengah */,
+    marginBottom: "0px",
+  }}
+/>
+
+<img
+  src="/pra_assesmen_enam.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    marginTop: "0px" /* Ini yang membuat gambar rata tengah */,
+    marginBottom: "0px",
+  }}
+/>
+| Variable                         | Cara Pengisian                                                                                                                                                                                     |
+| -------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| Keluhan Utama                    | Diisi dengan alasan utama pasien datang atau keluhan yang paling dirasakan saat ini. Contoh : Sesak napas dan nyeri dada.                                                                          |
+| Alergi                           | Diisi dengan riwayat alergi obat pada kolom pertama dan alergi lainnya (makanan/debu) pada kolom kedua. Jika tidak ada, isi "Tidak Ada". Contoh : Alergi Obat: Novalgin. Alergi Lain: Udara dingin |
+| Kasus                            | Pilih opsi Ponek untuk kegawatdaruratan kebidanan/bayi, atau Non Ponek untuk kasus umum.                                                                                                           |
+| Kondisi                          | Pilih kategori kondisi pasien saat datang (Trauma, Non Trauma, Obstetri, Evakuasi, atau DOA).                                                                                                      |
+| Riwayat Penyakit Terdahulu       | Pilih "Ada" lalu centang jenis penyakit yang sesuai dan tambahkan detail medis pada kolom teks                                                                                                     |
+| Kelompok Usia                    | Pilih kategori usia pasien (misal: Bayi, Anak, Dewasa, atau Geriatri).                                                                                                                             |
+| Airway                           | Pilih status jalan napas pasien (Paten, Obstruksi Parsial, atau Obstruksi Total).                                                                                                                  |
+| Breathing                        | Pilih status pernapasan pasien (Normal, Apneu, Takipneu, atau Bradipneu).                                                                                                                          |
+| Circulation                      | Pilih status sirkulasi sesuai dengan kondisi pasien                                                                                                                                                |
+| Skala Nyeri                      | Masukkan angka skala nyeri (0-10) berdasarkan penilaian visual atau laporan pasien.                                                                                                                |
+| Lokasi Nyeri                     | Tuliskan bagian tubuh spesifik di mana pasien merasakan nyeri.                                                                                                                                     |
+| Lama Nyeri                       | Masukkan durasi atau sejak kapan nyeri tersebut dirasakan.                                                                                                                                         |
+| Frekuensi Nyeri                  | Pilih apakah nyeri dirasakan Sering/ Hilang Timbul /Terus-menerus.                                                                                                                                 |
+| Skrining resiko jatuh            | Pilih hasil penilaian risiko jatuh (Rendah, Sedang, atau Tinggi) berdasarkan kriteria standar (misal: Morse/Humpty Dumpty).                                                                        |
+| Kesimpulan                       | Pilih kategori triase akhir berdasarkan kondisi klinis (P1/Merah, P2/Kuning, P3/Hijau, atau P4/Hitam).                                                                                             |
+| Penanggung Jawab                 | Tuliskan nama tenaga medis (perawat/dokter) yang melakukan proses triase.                                                                                                                          |
+ 
+
+ </Tab>
+</Tabs>
+
+

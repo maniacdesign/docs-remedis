@@ -1,0 +1,66 @@
+---
+title: MEOW Scoring 
+description: Berikut merupakan tampilan MEOW Scoring
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Form', 'Grafik']}>
+  <Tab value="Form">
+  <img
+  src="/meow_scoring.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0",
+  }}
+/>
+
+<img
+  src="/meow_scoring_wa.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0",
+  }}
+/>
+
+| Variable                                 | Cara Pengisian                                                                                     |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------- | 
+| Tanggal                                  | Diisi dengan tanggal pengisian Modified Early Obstetric Warning Score (MEOW Scoring)               |
+| Jam                                      | Diisi dengan jam pengisian Modified Early Obstetric Warning Score (MEOW Scoring)                   |
+| Laju reprasi/menit                       | Diisi dengan Keberadaan sesak napas (dispneu) atau penggunaan otot bantu napas.                    |
+| Saturasi O2                              | Diisi dengan hasil pengukuran saturasi dengan oximeter                                             |
+| Suplemen O2                              | Diisi dengan suplemen O2                                                                           |
+| Temperatur (°C)                          | Diisi dengan hasil pengukuran suhu tubuh pasien dengan termometer                                  |
+| Tekanan darah sistolik (mmHg)            | Diisi sesuai hasil pengukuran tekanan darah pasien                                                 |
+| Tekanan darah diastole (mmHg)            | Diisi sesuai hasil pengukuran tekanan darah pasien                                                 |
+| Laju detak jantung/menit                 | Diisi dengan frekuensi berapa kali jantung berdetak dalam satu menit (BPM - Beats Per Minute)      |
+| Kesadaran                                | Diisi sesuai tingkat kesadaran pasien                                                              |
+| Nyeri                                    | Diisi sesuai kondisi pasien                                                                        |
+| Discharge/ Locia                         | Diisi sesuai kondisi pasien                                                                        |
+| Proteinuria (per hari)                   | Diisi sesuai kondisi pasien                                                                        |
+
+  </Tab>
+
+  <Tab value="Grafik">
+  <img
+  src="/meow_scoring_grafik.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0",
+  }}
+/>
+
+| Variable        | Cara Pengisian                                           |
+| --------------- | -------------------------------------------------------- |
+| Tampilan Grafik | Otomatis terbentuk berdasarkan skor parameter klinis     |
+| Garis Tren      | Menunjukkan fluktuasi kondisi pasien secara real-time    |
+  </Tab>
+</Tabs>
+
+
+

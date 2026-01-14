@@ -1,0 +1,50 @@
+---
+title: EWS Neonatal
+description: Berikut merupakan tampilan Early Warning System (EWS) Neonatal
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Form', 'Grafik']}>
+  <Tab value="Form">
+ 
+<img
+  src="/ews_neonatal.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable               | Cara Pengisian                                                                  |
+| ---------------------- | ------------------------------------------------------------------------------- |
+| Tanggal                | Diisi dengan tanggal pemeriksaan neonatal                                       |
+| Jam                    | Diisi dengan waktu saat observasi klinis dilakukan                              |
+| Pernafasan Laju napas  | Diisi dengan frekuensi napas per menit serta observasi adanya retraksi/grunting |
+| Laju Jantung           | Diisi dengan frekuensi denyut jantung bayi per menit                            |
+| Suhu                   | Diisi dengan suhu tubuh bayi dalam derajat Celcius                              |
+  </Tab>
+
+  <Tab value="Grafik">
+      <img
+  src="/ews_neonatal_grafik.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+  />
+
+| Variable        | Cara Pengisian                                                                 |
+| --------------- | ------------------------------------------------------------------------------ |
+| Tampilan Grafik | Menampilkan tren visual dari total skor EWS neonatal secara kronologis         |
+| Garis Skor      | Menghubungkan titik-titik skor berdasarkan waktu pemantauan                    | 
+ 
+  </Tab>
+</Tabs>

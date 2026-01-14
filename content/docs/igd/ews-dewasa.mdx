@@ -1,0 +1,63 @@
+---
+title: EWS Dewasa
+description: Berikut merupakan tampilan Early Warning System (EWS) Dewasa
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Form', 'Grafik']}>
+  <Tab value="Form">
+  <img
+  src="/ews_dewasa.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0",
+  }}
+/>
+
+
+<img
+  src="/ews_dewasa_wa.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0",
+  }}
+/>
+
+| Variable                                 | Cara Pengisian                                                                                     |
+| ---------------------------------------- | -------------------------------------------------------------------------------------------------- | 
+| Tanggal                                  | Diisi dengan tanggal pengisian Early Warning Scoring System (Dewasa)                               |
+| Jam                                      | Diisi dengan jam pengisian Early Warning Scoring System (Dewasa)                                   |
+| Laju reprasi/menit                       | Diisi dengan Keberadaan sesak napas (dispneu) atau penggunaan otot bantu napas.                    |
+| Saturasi O2                              | Diisi dengan hasil pengukuran saturasi dengan oximeter                                             |
+| Suplemen O2                              | Diisi dengan suplemen O2                                                                           |
+| Temperatur (°C)                          | Diisi dengan hasil pengukuran suhu tubuh pasien dengan termometer                                  |
+| Tekanan darah sistolik (mmHg)            | Diisi sesuai hasil pengukuran tekanan darah pasien                                                 |
+| Tekanan darah diastole (mmHg)            | Diisi sesuai hasil pengukuran tekanan darah pasien                                                 |
+| Laju detak jantung/menit                 | Diisi dengan frekuensi berapa kali jantung berdetak dalam satu menit (BPM - Beats Per Minute)      |
+| Kesadaran                                | Diisi sesuai tingkat kesadaran pasien                                                              |
+
+  </Tab>
+  <Tab value="Grafik">
+    <img
+  src="/ews_dewasa_grafik.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+  />
+
+| Variable        | Cara Pengisian                                                                 |
+| --------------- | ------------------------------------------------------------------------------ |
+| Tampilan Grafik | Menampilkan tren visual dari total skor EWS dewasa secara kronologis           |
+| Garis Skor      | Menghubungkan titik-titik skor berdasarkan waktu pemantauan                    | 
+ </Tab>
+</Tabs>
