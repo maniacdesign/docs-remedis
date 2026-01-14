@@ -13,9 +13,13 @@
     "nicu",
     "cara-keluar",
     "---",
+<<<<<<< HEAD
     "rawat-jalan",
     "---",
     "igd"
+=======
+    "rawat-jalan"
+>>>>>>> 0a46a96e9ad8a18b1c0585d685ba3caf49d79ec8
   ],
   "defaultOpen": true
 }
