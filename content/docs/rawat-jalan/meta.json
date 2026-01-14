@@ -1,6 +1,7 @@
 {
   "title": "Rawat Jalan",
   "pages": [
+<<<<<<< HEAD
     "ringkasan-pasien",
     "assesmen-kontrol",
     "subyektif",
@@ -9,5 +10,9 @@
     "perencanaan",
     "rencana-keluar",
     "riwayat"
+=======
+    "index",
+    "ringkasan-pasien"
+>>>>>>> cf744be (komunikasi antar unit)
   ]
 }
