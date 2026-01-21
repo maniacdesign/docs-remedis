@@ -66,7 +66,18 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 
 ## Tampilan Preview CPPT Dokter
  <img
-  src="/cppt_preview_dokter.png"
+  src="/preview_cppt.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginButtom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid blue",
+  }}
+/>
+ <img
+  src="/verifdokter_cppt2.png"
   alt="Contoh tampilan form pengkajian awal medis"
   width="750"
   style={{
@@ -84,10 +95,12 @@ import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
 | Variable                         | Cara Pengisian                                                                                                                                                                        |
 | -------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | Preview                          | Digunakan untuk menampilkan hasil pengisian CPPT yang telah disimpan sehingga pengguna meninjau kembali data secara lengkap sebelum melakukan langkah selanjutnya                     |
-| Profesi                          | Pilih profesi yang ingin dilihat di preview                                                                                                                                           |
+| Profesi                          | Pilih profesi yang ingin dilihat di preview, Contoh : Dokter                                                                                                                          |
 | Tanggal verif SOAP               | Pilih tanggal verif SOAP yang ingin dilihat                                                                                                                                           |
+| Button Copy SOAP                 | Digunakan untuk menyalin isi catatan sebelumnya ke catatan baru agar dokter tidak perlu mengetik ulang jika kondisi pasien masih sama.                                                |
 | Button Edit                      | Memperbaiki pengisian SOAP atau SBAR yang ingin di ubah                                                                                                                               |                                                                                                                                                           
-| Button hapus                     | Digunakan untuk menghapus atau membatalkan catatan SOAP atau SBAR  
+| Button Hapus                     | Digunakan untuk menghapus atau membatalkan catatan SOAP atau SBAR                                                                                                                     |                       
+| Button Verifikasi                | Digunakan untuk melakukan verifikasi atau finalisasi oleh dokter terhadap catatan SOAP yang telah diinput                                                                             |
   </Tab>
 
   <Tab value="Perawat">
