@@ -1,0 +1,201 @@
+---
+title: Raber/Konsul
+description: Fitur Raber/Konsul merupakan fasilitas pada Rekam Medis Elektronik (RME) yang digunakan oleh dokter untuk melakukan permintaan konsultasi atau rujukan internal (raber) kepada dokter lain terkait kondisi pasien.
+---
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Pengirim', 'Penerima']}>
+  <Tab value="Pengirim">
+### 1. Pasien Hari Ini
+<img
+  src="/pilih_pasien.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="250"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                     |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+| Cari Pasien                                          | Ketik nama pasien atau nomor rekam medis pada kolom "Cari Pasien..." untuk memfilter data.                                                         |
+| Filter Pasien Saya                                   | Aktifkan toggle switch "Pasien Saya" jika hanya ingin menampilkan daftar pasien yang berada di bawah penanganan Anda.                              |
+| Pilih Pasien                                         | Klik pada nama pasien (contoh: BUDI CAHYONO, TN) untuk masuk ke lembar kerja E-RM pasien tersebut.                                                 |
+
+### 2. Button Konsul/Raber 
+<img
+  src="/raber_konsul.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="450"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                     |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+| Konsul / Raber                                          | Klik tombol biru berlabel "Konsul / Raber", Digunakan untuk melakukan permintaan konsultasi atau rawat bersama (raber) antar spesialis.         |
+
+### 3. Pengisian Konsul/Raber 
+<img
+  src="/pengisian_raber.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="450"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                     |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+| Tanggal Konsul                                       | Pilih tanggal pada kalender yang tersedia (Default: Tanggal hari ini), Pastikan tanggal sesuai dengan waktu permintaan konsul dilakukan.           |
+| SMF Dokter Tujuan                                    | Pilih spesialisasi atau SMF tujuan melalui menu dropdown, Memastikan konsul ditujukan ke departemen medis yang tepat.                              |
+| Nama Dokter Tujuan                                   | Pilih nama dokter spesialis yang dituju, Menentukan dokter spesifik yang akan menjawab konsul.                                                     |
+| Pertanyaan / Permohonan                              | Ketik detail pertanyaan atau alasan permohonan konsul, Berikan informasi klinis yang relevan agar jawaban konsul akurat.                           |
+| Simpan                                               | Klik tombol biru "Simpan" di bagian bawah form, Data akan tersimpan dan status pasien akan berpindah sesuai sistem.                                |
+
+
+### 4. Preview Konsul/Raber 
+<img
+  src="/preview_raber.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="450"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                                                                                            |
+| ---------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------    |
+| Preview                                              | Setelah disimpan, permohonan akan muncul pada bagian Preview. Pastikan status pada label berwarna biru menunjukkan "Konsul" untuk mengonfirmasi bahwa permintaan telah berhasil terkirim ke sistem dokter tujuan.         |
+
+ </Tab>
+
+
+  <Tab value="Penerima">
+### 1. Daftar Pasien Konsul/Raber 
+<img
+  src="/daftar_raber.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="250"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                     |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+| Menu Raber/Konsul                                    | Klik menu "Raber/Konsul" pada sidebar kiri, Digunakan untuk melihat daftar seluruh pasien yang memerlukan konsultasi.                              |
+| Filter Pasien Saya                                   | Aktifkan toggle "Pasien Saya", Berfungsi untuk menyaring daftar agar hanya menampilkan pasien yang dikonsulkan khusus kepada dokter penerima.      |
+| Pilih Pasien                                         | Pilih pasien yang akan dijawab permohonan konsulnya dari daftar akun dokter penerima.                                                              |
+
+### 2. Button Konsul/Raber 
+<img
+  src="/raber_konsul.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="450"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                     |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+| Konsul / Raber                                          | Klik tombol biru berlabel "Konsul / Raber", Digunakan untuk melakukan permintaan konsultasi atau rawat bersama (raber) antar spesialis.         |
+
+
+### 3. Edit Konsul/Raber 
+<img
+  src="/edit_konsul.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="250"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                     |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+|Pencil icon                                           |Tombol Edit   Klik ikon "Lambang Pensil" (tombol biru), Membuka form untuk mengisi jawaban konsul.                                                  |
+
+### 5. Pengisian Jawaban Raber Konsul/Raber 
+<img
+  src="/jawaban_raber.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="450"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                     |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+| Tanggal Jawaban                                      | Terisi otomatis (default hari ini) atau pilih tanggal, Menetapkan waktu pemberian jawaban medis.                                                   |
+| Isi Jawaban                                          | Ketik detail saran medis pada kolom "Jawaban", Memberikan respon klinis terhadap pertanyaan dokter pengirim.                                       |
+| Nama Dokter Pengirim                                 | Nama dokter akan terisi otomatis sesuai dengan nama dokter pengirim raber                                                                          |                                                     |
+| Aktifkan Raber                                       | Geser toggle "Raber" jika diperlukan, Aktifkan jika dokter penerima ingin melakukan rawat bersama.                                                 |
+| Simpan                                               | Klik tombol biru "Simpan" di bagian bawah, Untuk menyimpan jawaban dan memperbarui rekam medis pasien.                                             |
+
+### 6. Status Konsul/Raber 
+<img
+  src="/status_raber.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="450"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                                             | Cara Pengisian                                                                                                                                     |
+| ---------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+| Tampilan Jawaban                                     | Detail jawaban yang telah diinput akan muncul di bawah kolom pertanyaan.                                                                           |
+| Status Konsul                                        | Jika hanya menjawab konsul, label status tetap berwarna biru bertuliskan "Konsul".                                                                 |
+| Status Raber                                         | Jika tombol raber diaktifkan saat menjawab, label status akan otomatis berubah menjadi hijau bertuliskan "Raber".                                  | 
+
+### 7. Akses Medis
+<img
+  src="/menu_medis.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="250"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+/>
+
+| Variable                        | Cara Pengisian                                                                                                                                     |
+| ------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------        |
+| Akses Medis                     | Dokter selain DPJP utama (dokter raber) dapat melakukan pengisian E-RM pasien tersebut melalui menu medis yang tersedia setelah status raber aktif.|  
+    </Tab>
+    </Tabs>
+
+
