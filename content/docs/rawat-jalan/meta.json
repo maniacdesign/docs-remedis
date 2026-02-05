@@ -1,7 +1,7 @@
 {
   "title": "Dokumentasi E-RM Rawat Jalan",
   "pages": [
-    "ringkasan-pasien",
+    "index",
     "assesmen-kontrol",
     "subyektif",
     "obyektif",
@@ -9,9 +9,6 @@
     "perencanaan",
     "rencana-keluar",
     "riwayat",
-    "index"
-    "riwayat"
-    "index",
     "ringkasan-pasien"
   ]
 }
