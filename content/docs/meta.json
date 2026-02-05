@@ -3,6 +3,7 @@
   "pages": [
     "index",
     "pasien",
+    "komunikasi-antar-unit",
     "medis",
     "keperawatan",
     "kebidanan",
@@ -11,9 +12,11 @@
     "perawatan-pasien",
     "nicu",
     "cara-keluar",
-    "komunikasi-antar-unit",
+    "raber-konsul",
     "---",
-    "rawat-jalan"
+    "rawat-jalan",
+    "---",
+    "igd"
   ],
   "defaultOpen": true
 }

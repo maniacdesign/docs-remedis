@@ -1,7 +1,6 @@
 {
-  "title": "Rawat Jalan",
+  "title": "Dokumentasi E-RM Rawat Jalan",
   "pages": [
-<<<<<<< HEAD
     "ringkasan-pasien",
     "assesmen-kontrol",
     "subyektif",
@@ -9,10 +8,10 @@
     "assesmen",
     "perencanaan",
     "rencana-keluar",
+    "riwayat",
+    "index"
     "riwayat"
-=======
     "index",
     "ringkasan-pasien"
->>>>>>> cf744be (komunikasi antar unit)
   ]
 }

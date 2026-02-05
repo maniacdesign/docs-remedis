@@ -1,0 +1,50 @@
+---
+title: EWS Anak
+description: Berikut merupakan tampilan Early Warning System (EWS) Anak
+---
+
+import { Tab, Tabs } from 'fumadocs-ui/components/tabs';
+
+<Tabs groupId="language" items={['Form', 'Grafik']}>
+  <Tab value="Form">
+  <img
+  src="/ews_anak.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+  />
+
+  | Variable                                 | Cara Pengisian                                                                                |
+  | ---------------------------------------- | --------------------------------------------------------------------------------------------- | 
+  | Tanggal                                  | Diisi dengan tanggal pengisian EWS anak                                                       |
+  | Jam                                      | Diisi dengan jam pengisian ews anak                                                           |
+  | Keadaan Umum                             | Diisi dengan kondisi kesadaran/perilaku anak (misal: sadar, lemas, atau tidak respons)        |
+  | Kardiovaskular                           | Diisi dengan observasi warna kulit (misal: merah muda, pucat, atau sianosis)                  |
+  | Respirasi                                | Diisi dengan frekuensi napas dan penggunaan otot bantu napas                                  |
+  </Tab>
+
+  <Tab value="Grafik">
+
+  <img
+  src="/ews_anak_grafik.png"
+  alt="Contoh tampilan form pengkajian awal medis"
+  width="750"
+  style={{
+    display: "block",
+    margin: "0 auto",
+    marginBottom: "20px" /* Ini yang membuat gambar rata tengah */,
+    border: "2px solid gray",
+  }}
+  />
+
+| Variable        | Cara Pengisian                                                                 |
+| --------------- | ------------------------------------------------------------------------------ |
+| Tampilan Grafik | Menampilkan tren visual dari total skor EWS anak secara kronologis             |
+| Garis Skor      | Menghubungkan titik-titik skor berdasarkan waktu pemantauan                    | 
+  </Tab>
+</Tabs>
