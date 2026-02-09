@@ -1,4 +1,5 @@
 {
+<<<<<<< HEAD
   "title": "Dokumentasi E-RM IGD ",
   "pages": [
     "triase",
@@ -29,5 +30,18 @@
     "perencanaan-observasi-pasien",
     "resume-medis",
     "cetak-dokumen"
+=======
+  "title": "igd",
+  "pages": [
+    "anamnesis",
+    "skala-nyeri",
+    "resiko-jatuh",
+    "pengkajian-keperawatan",
+    "aswal-kebidanan",
+    "primary-survey",
+    "secondary-survey",
+    "pemeriksaan-fisik",
+    "objektif-kebidanan"
+>>>>>>> ff8615880013317c2d4cd4bc08bfdb388738862c
   ]
 }
