@@ -2,6 +2,7 @@
   "title": "Display Name",
   "pages": [
     "index",
+    "menu",
     "pasien",
     "komunikasi-antar-unit",
     "medis",
@@ -12,9 +13,12 @@
     "perawatan-pasien",
     "nicu",
     "cara-keluar",
+<<<<<<< HEAD
     "raber-konsul",
     "---",
     "rawat-jalan",
+=======
+>>>>>>> ff8615880013317c2d4cd4bc08bfdb388738862c
     "---",
     "igd"
   ],
